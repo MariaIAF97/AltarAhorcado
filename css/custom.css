@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Gobold Regular';
+    src: url('../typ/TipografiaTitulos/Gobold Regular.otf');
+}
+
+@font-face {
+    font-family: 'Cocogoose Light';
+    src: url('../typ/tipografiaTextoCorrido/Cocogoose Pro Light-trial.ttf');
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background-size: 100% 136%;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 100% 138%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background-size: 100% 135%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        background-size: 100% 137%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 100% 103%;
+    }
+}
+
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+body{
+    background-image: url("../img/PANTALLA-INSTRUCCIONES-FONDO.jpg");
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-family: 'Gobold Regular';
+    font-size: 6vw;
+    margin-left: 8%;
+    color: #fcdc28;
+}
+
+.instructions-container{
+    margin-top: 30%;
+    float: right;
+    width: 50%;
+    height: 80%;
+}
+
+p{
+    opacity: 0;
+    margin-top: 22%;
+    margin-left: 14%;
+    font-family: 'Cocogoose Light';
+    font-size: 2.5vw;
+    color:white;
+    width: 66%;
+    text-align: left;
+}
+
+p.show{
+    animation-name: fadeInOut;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.bottom-button{
+    position: fixed;
+    width: 100%;
+    bottom: 5%;
+}
+
+input{
+    float: right;
+    margin-right: 5%;
+    width: 14%;
+}
+input:hover{
+    box-shadow:0px 2px 10px 5px #97B1BF;
+ }
