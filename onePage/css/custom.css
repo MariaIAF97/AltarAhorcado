@@ -9,7 +9,9 @@
 }
 
 @media screen and (min-width: 320px) {
-   
+    body {
+        background-size: 100% 136%;
+    }
     #btnMenu1{
         position: fixed;
         width:11% ;
@@ -144,7 +146,9 @@
 }
 
 @media screen and (min-width: 360px) {
-    
+    body {
+        background-size: 100% 138%;
+    }
     #btnMenu1{
         position: fixed;
         padding-top:150% ;
@@ -273,7 +277,9 @@
 }
 
 @media screen and (min-width: 375px) {
-    
+    body {
+        background-size: 100% 135%;
+    }
     #btnMenu1{
         position: fixed;
         padding-top:183% ;
@@ -412,7 +418,9 @@
 }
 
 @media screen and (min-width: 414px) {
-    
+    body {
+        background-size: 100% 137%;
+    }
     .background { 
         height: 735px;
     }
@@ -453,7 +461,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    
+    body {
+        background-size: 100% 103%;
+    }
     .background {
         height: 1023px;
     }
