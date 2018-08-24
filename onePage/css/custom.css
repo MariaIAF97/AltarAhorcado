@@ -716,6 +716,10 @@ img.left-candle{
     animation-fill-mode: forwards;
 }
 
+#loading{
+    
+}
+
 #loading.animation{
     animation-name: fadeOutIn;
     animation-duration: 3s;
