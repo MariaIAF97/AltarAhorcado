@@ -1,0 +1,80 @@
+body{
+    background-image: url("../img/PANTALLA-PUNTUACION-EN-BLANCO.jpg");
+    background-repeat: no-repeat;
+    margin:0;
+}
+input:hover{
+    box-shadow:0px 2px 10px 5px #97B1BF;
+ } 
+@media screen and (min-width:320px){
+    body{
+        background-size: 320px 537px;
+    }
+    #btnMenu1{
+        position: fixed;
+        width:11% ;
+        height: 11%;
+        bottom:4% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:411px){
+    body{
+        background-size: 411px 823px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:169% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:1024px){
+    body{
+        background-size: 1024px 1366px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:113% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:360px){
+    body{
+        background-size: 360px 640px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:150% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:375px){
+    body{
+        background-size: 375px 812px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:183% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:768px){
+    body{
+        background-size: 768px 1024px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:113% ;
+        left: 82%;
+    }
+}
+@media screen and (min-width:414px){
+    body{
+        background-size: 414px 736px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:150% ;
+        left: 82%;
+    }
+}

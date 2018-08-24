@@ -1,0 +1,854 @@
+@font-face {
+    font-family: 'Gobold Regular';
+    src: url('../typ/TipografiaTitulos/Gobold Regular.otf');
+}
+
+@font-face {
+    font-family: 'Cocogoose Light';
+    src: url('../typ/tipografiaTextoCorrido/Cocogoose Pro Light-trial.ttf');
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        background-size: 100% 136%;
+    }
+    #btnMenu1{
+        position: fixed;
+        width:11% ;
+        height: 11%;
+        bottom:4% ;
+        left: 82%;
+    }
+    p{ 
+        font-size: 2.4vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
+    }
+    .background {
+        height: 568px;
+    }
+    img.left-candle{
+        top: 323px;
+        width: 26%;
+    }
+    img.right-candle{
+        top: 323px;
+        width: 26%;
+    }
+    .themes-selection{
+        margin-top:1%;
+    }
+    .themes-selection-first{
+        margin-top:29%;
+    }
+    .selection-buttons{
+        width: 97%;
+        bottom: 4%;
+    }
+    .selection-buttons input{
+        margin-right: 6.4%;
+        width: 11.3%;
+        height: 74px;
+    }
+    .selection-buttons input.second{
+        margin-right: 1.9%;
+    }
+    .buttonClass{
+        padding-top:148%;
+        width:10%;
+        height: 10%;
+        position: fixed;
+    }
+    #btnPuntuacion{
+        padding-top: 5px;
+        bottom:30px;
+        left:23% ;
+    }
+    #btnSilenciar{
+        padding-top: 5px;
+        bottom:30px;
+        left: 37%;
+    }
+    #btnInstrucciones{
+        padding-top: 5px;
+        bottom:30px;
+        left: 51%;
+    }
+    #btnCreditos{
+        padding-top: 5px;
+        bottom:30px;
+        left: 66%;
+    }
+
+    .gameButtons{
+        left:41% ;
+        position:fixed;
+        height: 5%;
+    }
+    #btnInicio{
+        bottom: 168px;
+    }
+    #btnCatrinas{
+        bottom: 134px;
+    }
+    #btnTemas{
+        bottom: 101px;
+    }
+    .catrina.catrina-first{
+        margin-top: 59px;
+    }
+    .catrina.catrina-second{
+        margin-top: 226px;
+    }
+    .catrina.catrina-third{
+        margin-top: 376px;
+    }
+    #boton-down{
+    position: fixed;
+        padding-left: 82%;
+    }
+    #boton-down2{
+    position: fixed;
+        padding-left: 68%;
+    }
+    .margen{
+        padding-right: 47%; 
+        padding-left: 27%;
+    }
+    .boton-up{
+        bottom: 15%;
+        padding-top: 90%;
+    }
+
+    #animal{
+        position: fixed;
+        padding-top: 30%;
+
+    }
+    #color{
+        position: fixed;
+        padding-top: 65%;
+
+    }
+    #elemento{
+
+        padding-top: 100%;
+
+    }
+
+}
+
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 100% 138%;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:150% ;
+        left: 82%;
+    }
+    p{ 
+        font-size: 2.6vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
+    }
+    .background {
+        height: 640px;
+    }
+    img.left-candle{
+        top: 350px;
+    }
+    img.right-candle{
+        top: 350px;;
+    }
+    .themes-selection{
+        margin-top:4%;
+    }
+    .themes-selection-first{
+        margin-top:29%;
+    }
+    .selection-buttons{
+        width: 97%;
+        bottom: 4%;
+    }
+    .selection-buttons input{
+        margin-right: 5.9%;
+        width: 11.3%;
+        height: 74px;
+    }
+    .selection-buttons input.second{
+        margin-right: 1.9%;
+    }
+    .buttonClass{
+        padding-top:152%;
+        width:11%;
+        height: 11%;
+        position: fixed;
+    }
+    #btnPuntuacion{
+        padding-top: 5px;
+        bottom:14px;
+        left:23% ;
+    }
+    #btnSilenciar{
+        padding-top: 5px;
+        bottom:14px;
+        left: 37%;
+    }
+    #btnInstrucciones{
+        padding-top: 5px;
+        bottom:14px;
+        left: 51%;
+    }
+    #btnCreditos{
+        padding-top: 5px;
+        bottom:14px;
+        left: 66%;
+    }
+
+    .gameButtons{
+        left:41% ;
+        position:fixed;
+        height: 5%;
+    }
+    #btnInicio{
+        bottom: 181px;
+    }
+    #btnCatrinas{
+        bottom: 142px;
+    }
+    #btnTemas{
+        bottom: 101px;
+    }
+    .catrina.catrina-first{
+        margin-top: -381px;
+    }
+    .catrina.catrina-second{
+        margin-top: -227px;
+    }
+    .catrina.catrina-third{
+        margin-top: -74px;
+    }
+    #boton-down{
+    position: fixed;
+        padding-left: 82%;
+    }
+    #boton-down2{
+    position: fixed;
+        padding-left: 68%;
+    }
+    .margen{
+        padding-right: 47%; 
+        padding-left: 27%;
+    }
+    .boton-up{
+        bottom: 15%;
+        padding-top: 90%;
+    }
+
+    #animal{
+        position: fixed;
+        padding-top: 30%;
+
+    }
+    #color{
+        position: fixed;
+        padding-top: 65%;
+
+    }
+    #elemento{
+
+        padding-top: 100%;
+
+    }
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background-size: 100% 135%;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:183% ;
+        left: 82%;
+    }
+    p{ 
+        font-size: 2.6vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
+    }
+    .background {
+        height: 667px;
+    }
+
+    img.left-candle{
+        top: 359px;
+    }
+    img.right-candle{
+        top: 359px;;
+    }
+    .themes-selection{
+        margin-top:6%;
+    }
+    .themes-selection-first{
+        margin-top:29%;
+    }
+    .selection-buttons{
+        width: 97%;
+        bottom: 4%;
+    }
+    .selection-buttons input{
+        margin-right: 5.9%;
+        width: 11.3%;
+        height: 77px;
+    }
+    .selection-buttons input.second{
+        margin-right: 1.9%;
+    }
+    .buttonClass{
+        padding-top:154%;
+        width:10%;
+        height: 10%;
+        position: fixed;
+    }
+    #btnPuntuacion{
+        padding-top: 5px;
+        bottom:26px;
+        left:23% ;
+    }
+    #btnSilenciar{
+        padding-top: 5px;
+        bottom:26px;
+        left: 37%;
+    }
+    #btnInstrucciones{
+        padding-top: 5px;
+        bottom:26px;
+        left: 51%;
+    }
+    #btnCreditos{
+        padding-top: 5px;
+        bottom:26px;
+        left: 66%;
+    }
+
+    .gameButtons{
+        left:41% ;
+        position:fixed;
+        height: 5%;
+    }
+    #btnInicio{
+        bottom: 181px;
+    }
+    #btnCatrinas{
+        bottom: 142px;
+    }
+    #btnTemas{
+        bottom: 101px;
+    }
+    #cara1{
+        position: fixed;
+        width:15% ;
+        height: 15%;
+        padding-top: 20%;
+        
+    }
+    #cara2{
+        position: fixed;
+        width:15% ;
+        height: 15%;
+        padding-top: 60%;
+    }
+    #cara3{
+
+        width:15% ;
+        height: 15%;
+        padding-top: 100%;
+    }
+    #boton-down{
+    position: fixed;
+        padding-left: 82%;
+    }
+    #boton-down2{
+    position: fixed;
+        padding-left: 68%;
+    }
+    .margen{
+        padding-right: 47%; 
+        padding-left: 27%;
+    }
+    .boton-up{
+        bottom: 15%;
+        padding-top: 90%;
+    }
+    #animal{
+        position: fixed;
+        padding-top: 30%;
+
+    }
+    #color{
+        position: fixed;
+        padding-top: 65%;
+
+    }
+    #elemento{
+
+        padding-top: 100%;
+
+    }
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        background-size: 100% 137%;
+    }
+    .background { 
+        height: 735px;
+    }
+
+    #btnMenu1{
+        position: fixed;
+        padding-top:150% ;
+        left: 82%;
+    }
+
+    img.left-candle{
+        top: 405px;
+    }
+    img.right-candle{
+        top: 405px;;
+    }
+    .themes-selection{
+        margin-top:7%;
+        height: 6.8rem !important;
+    }
+    .themes-selection-first{
+        margin-top:31%;
+        height: 6.8rem !important;
+    }
+    .selection-buttons{
+        width: 97%;
+        bottom: 4%;
+    }
+    .selection-buttons input{
+        margin-right: 5.9%;
+        width: 11.3%;
+        height: 87px;
+    }
+    .selection-buttons input.second{
+        margin-right: 1.9%;
+        width: 11.3%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 100% 103%;
+    }
+    .background {
+        height: 1023px;
+    }
+    #btnMenu1{
+        position: fixed;
+        padding-top:113% ;
+        left: 82%;
+    }
+
+    img.left-candle{
+        top: 559px;
+    }
+    img.right-candle{
+        top: 559px;;
+    }
+    .themes-selection{
+        margin-top:5%;
+        height: 9.5rem !important;
+    }
+    .themes-selection-first{
+        margin-top:24%;
+        height: 9rem !important;
+    }
+    .selection-buttons{
+        width: 97%;
+        bottom: 4%;
+    }
+    .selection-buttons input{
+        margin-right: 5%;
+        width: 11.3%;
+        height: 117px;
+    }
+    .selection-buttons input.second{
+        margin-right: 1.9%;
+        width: 11.3%;
+    }
+    .buttonClass{
+        padding-top:115%;
+        position: fixed;
+    }
+    #btnPuntuacion{
+        padding-top: 42px;
+        bottom:26px;
+        left:23% ;
+    }
+    #btnSilenciar{
+        padding-top: 42px;
+        bottom:26px;
+        left: 37%;
+    }
+    #btnInstrucciones{
+        padding-top: 42px;
+        bottom:26px;
+        left: 51%;
+    }
+    #btnCreditos{
+        padding-top: 42px;
+        bottom:26px;
+        left: 66%;
+    }
+
+    .gameButtons{
+        left:41% ;
+        position:fixed;
+    }
+    #btnInicio{
+        bottom: 288px;
+    }
+    #btnCatrinas{
+        bottom: 224px;
+    }
+    #btnTemas{
+        bottom: 163px;
+    }
+    #cara1{
+        position: fixed;
+        width:15% ;
+        height: 15%;
+        padding-top: 20%;
+        
+    }
+    #cara2{
+        position: fixed;
+        width:15% ;
+        height: 15%;
+        padding-top: 60%;
+    }
+    #cara3{
+
+        width:15% ;
+        height: 15%;
+        padding-top: 100%;
+    }
+    #boton-down{
+    position: fixed;
+        padding-left: 82%;
+    }
+    #boton-down2{
+    position: fixed;
+        padding-left: 68%;
+    }
+    .margen{
+        padding-right: 47%; 
+        padding-left: 27%;
+    }
+    .boton-up{
+        bottom: 15%;
+        padding-top: 90%;
+    }
+    #animal{
+        position: fixed;
+        padding-top: 30%;
+
+    }
+    #color{
+        position: fixed;
+        padding-top: 65%;
+
+    }
+    #elemento{
+
+        padding-top: 100%;
+
+    }
+}
+
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOutIn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+body{
+
+}
+
+.background{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 100%;
+    z-index: -1;
+}
+
+.title{
+    font-family: 'Gobold Regular';
+    font-size: 6vw;
+    margin-left: 8%;
+    color: #fcdc28;
+}
+
+.instructions-container{
+    margin-top: 30%;
+    float: right;
+    width: 50%;
+    height: 80%;
+}
+
+/* p{
+    opacity: 0;
+    margin-top: 22%;
+    margin-left: 14%;
+    font-family: 'Cocogoose Light';
+    font-size: 2.7vw;
+    color:white;
+    width: 66%;
+    text-align: left;
+} */
+
+p.show{
+    animation-name: fadeInOut;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#unloaded.animation{
+    animation-name: fadeOutIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#loaded.animation{
+    animation-name: fadeInOut;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.bottom-button{
+    position: fixed;
+    width: 100%;
+    bottom: 5%;
+}
+
+input{
+    float: right;
+    margin-right: 5%;
+    width: 14%;
+}
+
+#btnToMenu{
+    float: right;
+    margin-right: 21%;
+    width: 12.4%;
+}
+
+
+input:hover{
+    box-shadow:0px 2px 10px 5px #97B1BF;
+ }
+
+ .themes-selection{
+    width:54% !important;
+    height: 6.5rem;
+    float:none;
+    margin-left: 24%;
+    margin-right: 20%;
+}
+
+.themes-selection-first{
+    width:54% !important;
+    height: 6.5rem;
+    float:none;
+    margin-left: 24%;
+    margin-right: 20%;
+}
+
+.candles{
+    position: relative;
+    opacity: 1;
+}
+
+.loaded-candles{
+    position: relative;
+    opacity: 0;
+}
+
+img.right-candle{
+    position: absolute;
+    right:0;
+}
+
+img.left-candle{
+    position: absolute;
+}
+
+#themes{
+    display: none;
+}
+
+#themes.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#themes.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#loading{
+    
+}
+
+#loading.animation{
+    animation-name: fadeOutIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.selection-buttons{
+    position: fixed;
+}
+    
+.selection-buttons input{
+    float: right;
+}
+
+#principal{
+    display: none;
+}
+#principal.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#principal.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#instructions{
+    display: none;
+}
+#instructions.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#instructions.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#puntuacion{
+    display: none;
+}
+#puntuacion.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#puntuacion.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#game{
+    display: none;
+}
+#game.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#game.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#catrinas{
+    display: none;
+}
+#catrinas.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#catrinas.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#credits{
+    display: none;
+}
+#credits.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#credits.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.catrina{
+    position: fixed;
+    width: 31%;
+    margin-top: 67px;
+    margin-left: 59px;
+    height: 22%;
+    padding-top: 0%;
+}
+
+#creditsToMenu{
+    float: right;
+    margin-right: 9%;
+    width: 12.4%;
+}
+
+
