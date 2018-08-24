@@ -12,17 +12,50 @@
     body {
         background-size: 100% 136%;
     }
+    p{ 
+        font-size: 2.4vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
+    }
 }
 
 @media screen and (min-width: 360px) {
     body {
         background-size: 100% 138%;
     }
+    p{ 
+        font-size: 2.6vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
+    }
 }
 
 @media screen and (min-width: 375px) {
     body {
         background-size: 100% 135%;
+    }
+    p{ 
+        font-size: 2.6vw;
+        opacity: 0;
+        margin-top: 22%;
+        margin-left: 14%;
+        font-family: 'Cocogoose Light';
+        color:white;
+        width: 66%;
+        text-align: left;
+        
     }
 }
 
@@ -62,16 +95,16 @@ body{
     height: 80%;
 }
 
-p{
+/* p{
     opacity: 0;
     margin-top: 22%;
     margin-left: 14%;
     font-family: 'Cocogoose Light';
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     color:white;
     width: 66%;
     text-align: left;
-}
+} */
 
 p.show{
     animation-name: fadeInOut;
