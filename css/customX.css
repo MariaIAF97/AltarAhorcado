@@ -12,62 +12,29 @@ input:hover{
         background-size:320px 537px ;
     }
     .buttonClass{
-        position: fixed;
-        bottom:4%;
-    }
-    #btnPuntuacion{
-        left:23% ;
-        
-    }
-    #btnSilenciar{
-        left: 37%;
-    }
-    #btnInstrucciones{
-       left: 51%;
-    }
-    #btnCreditos{
-        left: 66%;
-    }
-
-    .btnJuego{
-        left:41% ;
-        position:fixed;
-        height: 5%;
-    }
-    #btnInicio{
-        padding-top:112%;
-    }
-    #btnCatrinas{
-        padding-top:122%;
-    }
-    #btnTemas{
-        padding-top:132%;
-    }
-    
-    
-}
-
-/*Galaxy S5*/
-@media screen and (min-width:360px){
-    body{
-        background-size:360px 640px ;
-    }
-    .buttonClass{
-        padding-top:152%;
-        width:11%;
-        height: 11%;
+        padding-top:148%;
+        width:10%;
+        height: 10%;
         position: fixed;
     }
     #btnPuntuacion{
+        padding-top: 5px;
+        bottom:30px;
         left:23% ;
     }
     #btnSilenciar{
+        padding-top: 5px;
+        bottom:30px;
         left: 37%;
     }
     #btnInstrucciones{
+        padding-top: 5px;
+        bottom:30px;
         left: 51%;
     }
     #btnCreditos{
+        padding-top: 5px;
+        bottom:30px;
         left: 66%;
     }
 
@@ -77,13 +44,13 @@ input:hover{
         height: 5%;
     }
     #btnInicio{
-        padding-top:117%;
+        bottom: 168px;
     }
     #btnCatrinas{
-        padding-top:127%;
+        bottom: 134px;
     }
     #btnTemas{
-        padding-top:137%;
+        bottom: 101px;
     }
 }
 /* Pixel 2*/
