@@ -3,31 +3,34 @@ body{
     background-repeat: no-repeat;
     margin:0;
 }
+input:hover{
+    box-shadow:0px 2px 10px 5px #97B1BF;
+ } 
 /* Responsive */
 @media screen and (min-width:320px){
     body{
         background-size:320px 537px ;
     }
     .buttonClass{
-        width:11%;
-        height: 11%;
         position: fixed;
+        bottom:4%;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
+        
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+       left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
-    .gameButtons{
-        padding-left:41% ;
+    .btnJuego{
+        left:41% ;
         position:fixed;
         height: 5%;
     }
@@ -40,6 +43,8 @@ body{
     #btnTemas{
         padding-top:132%;
     }
+    
+    
 }
 
 /*Galaxy S5*/
@@ -54,20 +59,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
         height: 5%;
     }
@@ -81,7 +86,7 @@ body{
         padding-top:137%;
     }
 }
-/* Pixel 2 */
+/* Pixel 2*/
 @media screen and (min-width:411px){
     body{
         background-size:411px 731px ;
@@ -93,20 +98,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
         height: 5%;
     }
@@ -121,7 +126,7 @@ body{
     }
 }
 /* iPhone 5/SE */
-@media screen and (min-width:320px){
+@media screen and (min-width:320px){ */
     body{
         background-size:320px 548px ;
     }
@@ -132,20 +137,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
         height: 5%;
     }
@@ -171,20 +176,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
         height: 5%;
     }
@@ -208,20 +213,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
     }
     #btnInicio{
@@ -245,20 +250,20 @@ body{
         position: fixed;
     }
     #btnPuntuacion{
-        padding-left:23% ;
+        left:23% ;
     }
     #btnSilenciar{
-        padding-left: 37%;
+        left: 37%;
     }
     #btnInstrucciones{
-        padding-left: 51%;
+        left: 51%;
     }
     #btnCreditos{
-        padding-left: 66%;
+        left: 66%;
     }
 
     .gameButtons{
-        padding-left:41% ;
+        left:41% ;
         position:fixed;
     }
     #btnInicio{
