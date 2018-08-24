@@ -3,9 +3,9 @@
         background-size: 360px 640px;
     }
     #boton-down{  
-        position: absolute;
+        
         width: 100%;
-        bottom: 5%;
+        padding-top: 100%;
     }
     input{
         float: right;
