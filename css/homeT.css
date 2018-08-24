@@ -1,0 +1,70 @@
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 360px 640px;
+    }
+    #animal{
+        position: fixed;
+        padding-top: 30%;
+
+    }
+    #color{
+        position: fixed;
+        padding-top: 65%;
+
+    }
+    #elemento{
+
+        padding-top: 100%;
+
+    }
+    #boton-down{
+        position: fixed;
+        padding-left: 82%;
+    }
+    #boton-down2{
+        position: fixed;
+        padding-left: 68%;
+    }
+    .margen{
+
+        padding-left: 17%;
+    }
+    .boton-up{
+        bottom: 3%;
+
+    }
+}
+
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 100% 138%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background-size: 100% 135%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        background-size: 100% 137%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 100% 103%;
+    }
+}
+
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+body{
+    background-image: url("../img/PANTALLA-SELECCION-TEMAS-EN-BLANCO.jpg");
+    background-repeat: no-repeat;
+}

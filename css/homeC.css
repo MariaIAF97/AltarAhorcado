@@ -1,0 +1,50 @@
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 360px 640px;
+    }
+    #boton-down{  
+        position: absolute;
+        width: 100%;
+        bottom: 5%;
+    }
+    input{
+        float: right;
+        margin-right: 5%;
+        width: 14%;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    body {
+        background-size: 100% 138%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    body {
+        background-size: 100% 135%;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    body {
+        background-size: 100% 137%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 100% 103%;
+    }
+}
+
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+body{
+    background-image: url("../img/PANTALLA-CREDITOSjpg.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+}
