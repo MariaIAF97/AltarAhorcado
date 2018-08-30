@@ -8,11 +8,6 @@
     src: url('../typ/tipografiaTextoCorrido/Cocogoose Pro Light-trial.ttf');
 }
 
-#btnMenu1{
-    position: fixed;
-    padding-top:150% ;
-    left: 82%;
-}
 p{ 
     font-size: 2.6vw;
     opacity: 0;
@@ -24,44 +19,38 @@ p{
         
 }
 
-.buttonClass{
-    padding-top:152%;
-    position: fixed;
-}
-#btnPuntuacion{
-    padding-top: 5px;
-    bottom:14px;
-    left:23% ;
-}
-#btnSilenciar{
-    padding-top: 5px;
-    bottom:14px;
-    left: 37%;
-}
-#btnInstrucciones{
-    padding-top: 5px;
-    bottom:14px;
-    left: 51%;
-}
-#btnCreditos{
-    padding-top: 5px;
-    bottom:14px;
-    left: 66%;
-}
-
+/* Principal */
 .gameButtons{
-    left:41% ;
-    position:fixed;
+    position: fixed;
+    left: 42%;
 }
-#btnInicio{
-    bottom: 181px;
+#btnInicioJuego{
+    bottom: 30%;
 }
 #btnCatrinas{
-    bottom: 142px;
+    bottom: 22%;
 }
 #btnTemas{
-    bottom: 101px;
+    bottom: 14%;
 }
+.menuButton{
+    position: fixed;
+    bottom:3%;
+}
+#btnPuntuacion{
+    left: 23%;
+}
+#btnSilenciar{
+    left: 38%;
+}
+#btnInstrucciones{
+    left: 53%;
+}
+#btnCreditos{
+    left: 68%;
+}
+
+/* Principal */
 .catrina.catrina-first{
     margin-top: -381px;
 }
@@ -223,9 +212,6 @@ img.left-candle{
     animation-fill-mode: forwards;
 }
 
-#loading{
-    
-}
 
 #loading.animation{
     animation-name: fadeOutIn;
@@ -348,5 +334,63 @@ img.left-candle{
     float: right;
     margin-right: 9%;
 }
+
+/* Juego */
+#btnJugar{
+    position: fixed;
+    bottom:6% ;
+    left: 13%;
+}
+#btnPausa{
+    position: fixed;
+    bottom:6% ;
+    left: 82%;
+}
+#btnMenu{
+    position: fixed;
+    bottom:6% ;
+    left: 70%;
+}
+.keyboard{
+    position: fixed;
+    width: 5%;
+}
+.firstRowButtons{
+    bottom:25%;
+}
+.secondRowButtons{
+    bottom:20%;
+}
+.thirdRowButtons{
+    bottom:15%;
+}
+.fourthRowButtons{
+    bottom:10%;
+}
+.firstColumnButtons{
+    left: 28%;
+}
+.secondColumnButtons{
+    left: 34%;
+}
+.thirdColumnButtons{
+    left: 40%;
+}
+.fourthColumnButtons{
+    left: 46%;
+}
+.fifthColumnButtons{
+    left: 52%;
+}
+.sixthColumnButtons{
+    left: 58%;
+}
+.seventhColumnButtons{
+    left: 64%;
+}
+.eighthColumnButtons{
+    left: 70%;
+}
+/* Juego */
 
 
