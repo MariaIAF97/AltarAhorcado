@@ -29,3 +29,7 @@ function choseTopic(e){
     chosenTopic=topics[2][Math.floor(Math.random()*topics[2].length)];
   }
 }
+
+function choseCatrina(e){
+  
+}
