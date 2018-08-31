@@ -11,12 +11,12 @@
 p{ 
     font-size: 2.6vw;
     opacity: 0;
-    margin-top: 22%;
-    margin-left: 14%;
+    margin-top: 8%;
+    margin-left: 66%;
     font-family: 'Cocogoose Light';
     color:white;
     text-align: left;
-        
+    width:27%;
 }
 
 /* Principal */
@@ -102,13 +102,13 @@ p{
 
 .title{
     font-family: 'Gobold Regular';
-    font-size: 6vw;
-    margin-left: 8%;
+    font-size: 5vw;
+    margin-left: 62%;
     color: #fcdc28;
 }
 
 .instructions-container{
-    margin-top: 30%;
+    margin-top: 26%;
     float: right;
 }
 
@@ -125,7 +125,7 @@ p{
 
 p.show{
     animation-name: fadeInOut;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -144,11 +144,24 @@ p.show{
 .bottom-button{
     position: fixed;
     bottom: 5%;
+    width: 97%;
+}
+
+.bottom-button.credits{
+    bottom: 4% !important;
+}
+
+.bottom-button.puntuacion{
+    bottom: 4% !important;
 }
 
 input{
     float: right;
     margin-right: 5%;
+}
+
+input.puntuacion{
+    margin-right: 3% !important;
 }
 
 #btnToMenu{
@@ -217,7 +230,7 @@ img.left-candle{
 
 #loading.animation{
     animation-name: fadeOutIn;
-    animation-duration: 3s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -248,13 +261,13 @@ img.left-candle{
 
 #principal.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;;
     animation-fill-mode: forwards;
 }
 
 #principal.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -263,13 +276,13 @@ img.left-candle{
 }
 #instructions.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
 #instructions.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -278,13 +291,13 @@ img.left-candle{
 }
 #puntuacion.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
 #puntuacion.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -293,13 +306,13 @@ img.left-candle{
 }
 #game.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
 #game.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -308,13 +321,13 @@ img.left-candle{
 }
 #catrinas.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
 #catrinas.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -323,13 +336,13 @@ img.left-candle{
 }
 #credits.animationIn{
     animation-name: fadeInOut;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
 #credits.animationOut{
     animation-name: fadeOutIn;
-    animation-duration: 2s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -342,7 +355,7 @@ img.left-candle{
 
 #creditsToMenu{
     float: right;
-    margin-right: 9%;
+    margin-right: 4%;
 }
 
 /* Juego */
