@@ -502,14 +502,14 @@ img.left-candle{
     display: none;
 }
 .keyboard.quinta{
-    left: 669px;
-    top:185px;
+    left: 548px;
+    top:123px;
     display: none;
 }
 
 .keyboard.sexta{
-    left: 548px;
-    top:123px;
+    left: 669px;
+    top:185px;
     display: none;
 }
 

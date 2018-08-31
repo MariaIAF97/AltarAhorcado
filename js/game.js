@@ -40,9 +40,10 @@ function intento(letra) {
   document.getElementById(letra).disabled = true;
   if(palabra.indexOf(letra) != -1) {
     for(var i=0; i<palabra.length; i++) {
-      if(palabra[i]==letra) oculta[i] = letra;
+      if(palabra[i]==letra) oculta.push(letra);
     }
     console.log("Acierto");
+    console.log(oculta.length);
     var letters=document.getElementsByClassName(letra.toLowerCase());
     for(var i = 0; i < letters.length; i++){
       if(!letters[i].classList.contains('animation')){
