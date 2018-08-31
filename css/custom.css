@@ -472,3 +472,58 @@ img.left-candle{
 /* Catrina */
 
 
+.keyboard.primera{
+    left: 171px;
+    top:125px;
+    display: none;
+}
+
+.keyboard.animation{
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.keyboard.segunda{
+    left: 234px;
+    top:218px;
+    display: none;
+}
+
+.keyboard.tercera{
+    left: 331px;
+    display: none;
+    top:127px;
+}
+
+.keyboard.cuarta{
+    left: 433px;
+    top:189px;
+    display: none;
+}
+.keyboard.quinta{
+    left: 548px;
+    top:123px;
+    display: none;
+}
+
+.keyboard.sexta{
+    left: 669px;
+    top:185px;
+    display: none;
+}
+
+.keyboard.septima{
+    left: 787px;
+    top:127px;
+    display: none;
+}
+
+.keyboard.octava{
+    left: 886px;
+    top:220px;
+    display: none;
+}
+
+
+

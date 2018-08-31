@@ -30,6 +30,15 @@ var rand;
 function inicio() {
   generaPalabra();
   errors = 0;
+  var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
+  var palabra = "";
+  var rand;
+  var cont = 7;
+
+
+function inicio() {
+    generaPalabra();
+    cont = 7;
 }
 function generaPalabra() {
   rand = (Math.random() * 19).toFixed(0);
@@ -70,7 +79,25 @@ function intento(letra) {
     // }
 
 
+  if(palabra.indexOf(letra) != -1) {
+    for(var i=0; i<palabra.length; i++) {
+      if(palabra[i]==letra) oculta.push(letra);
+    }
+    console.log("Acierto");
+    console.log(oculta.length);
+    var letters=document.getElementsByClassName(letra.toLowerCase());
+    for(var i = 0; i < letters.length; i++){
+      if(!letters[i].classList.contains('animation')){
+        letters[i].style.display="block";
+        letters[i].classList.add('animation');
+      }
+    }
+  }else{
+      cont--;
+      console.log(cont);
+      console.log("Fallo");
   }
+  compruebaFin();
 }
 
 /*function choseTopic(e){
@@ -96,6 +123,14 @@ function choseCatrina(e) {
   }
   if (item.getAttribute('clasif') == "catrina3") {
     src = "img/seleccion-catrina-3.jpg";
+  }
+}
+
+function compruebaFin() {
+  if( oculta.length == palabra.length) {
+    console.log("Ganó");
+  }else if( cont == 0 ) {
+    console.log("Perdió");
   }
 }
 
