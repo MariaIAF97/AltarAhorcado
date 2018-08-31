@@ -77,18 +77,6 @@ p{
     padding-top: 90%;
 }
 
-#animal{
-    position: fixed;
-    padding-top: 30%;
-}
-#color{
-    position: fixed;
-    padding-top: 65%;
-}
-#elemento{
-    padding-top: 100%;
-}
-
 
 @keyframes fadeInOut {
     from {opacity: 0;}
@@ -414,18 +402,18 @@ img.left-candle{
 }
 #animal{
     position: fixed;
-    margin-top: 15%;
+    margin-top: 45%;
     left: 27%; 
     
 }
 #color{
     position: fixed;
-    margin-top: 5%;
+    margin-top: 71%;
     left: 27%;
 }
 #elemento{
     position: fixed;
-    margin-top: -2%;
+    margin-top: 97%;
     left: 27%;
 }
 
