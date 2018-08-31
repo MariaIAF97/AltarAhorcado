@@ -220,19 +220,17 @@ img.left-candle{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-
-.selection-buttons{
+   
+.selection-buttons input{
     position: fixed;
     bottom: 4%;
-}
-    
-.selection-buttons input{
-    float: right;
-    margin-right: 5.9%;
+    left: 83%;
 }
 
 .selection-buttons input.second{
-    margin-right: 1.9%;
+    position: fixed;
+    bottom: 4%;
+    left: 68%;
 }
 
 #principal{
@@ -400,6 +398,39 @@ img.left-candle{
 }
 .eighthColumnButtons{
     left: 70%;
+}
+#animal{
+    position: fixed;
+    margin-top: 15%;
+    left: 27%; 
+    
+}
+#color{
+    position: fixed;
+    margin-top: 5%;
+    left: 27%;
+}
+#elemento{
+    position: fixed;
+    margin-top: -2%;
+    left: 27%;
+}
+
+#cara1{
+    position: fixed;
+    margin-top: 15%;
+    left: 5%; 
+    
+}
+#cara2{
+    position: fixed;
+    margin-top: 59%;
+    left: 5%;
+}
+#cara3{
+    position: fixed;
+    margin-top: 106%;
+    left: 5%;
 }
 /* Juego */
 
