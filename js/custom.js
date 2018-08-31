@@ -45,6 +45,7 @@ function init(){
     menu.addEventListener('animationend', dissapear);
     instructions_section.addEventListener('animationend', dissapear);
     game_screen.addEventListener('animationend', dissapear);
+    themes.addEventListener('animationend', dissapear);
     credits.addEventListener('animationend', dissapear);
     catrinas_screen.addEventListener('animationend', dissapear);
     puntuacion.addEventListener('animationend', dissapear);
