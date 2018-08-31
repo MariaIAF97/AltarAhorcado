@@ -122,9 +122,48 @@ function choseCatrina(e) {
 function compruebaFin() {
   if( oculta.length == palabra.length) {
     console.log("Ganó");
+    puntosFinales=oculta.length*3456;
+    var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
+    var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
+    var puntajeMedio2=localStorage.getItem('puntajeMedio2')!=null?localStorage.getItem('puntajeMedio2'):0;
+    var puntajeMenor=localStorage.getItem('puntajeMenor')!=null?localStorage.getItem('puntajeMenor'):0;
+
+    if(puntajeMayor < puntosFinales){
+      localStorage.setItem('puntajeMayor', puntosFinales);
+    }
+    if(puntajeMedio1 < puntosFinales && puntajeMayor > puntosFinales){
+      localStorage.setItem('puntajeMedio1', puntosFinales);
+    }
+    if(puntajeMedio2 < puntosFinales && puntajeMedio1 > puntosFinales){
+      localStorage.setItem('puntajeMedio2', puntosFinales);
+    }
+    if(puntajeMenor < puntosFinales && puntajeMedio2 > puntosFinales){
+      localStorage.setItem('puntajeMenor', puntosFinales);
+    }
+    
   }else if( cont == 0 ) {
     console.log("Perdió");
+
+    puntosFinales=oculta.length*3456;
+    var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
+    var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
+    var puntajeMedio2=localStorage.getItem('puntajeMedio2')!=null?localStorage.getItem('puntajeMedio2'):0;
+    var puntajeMenor=localStorage.getItem('puntajeMenor')!=null?localStorage.getItem('puntajeMenor'):0;
+
+    if(puntajeMayor < puntosFinales){
+      localStorage.setItem('puntajeMayor', puntosFinales);
+    }
+    if(puntajeMedio1 < puntosFinales && puntajeMayor > puntosFinales){
+      localStorage.setItem('puntajeMedio1', puntosFinales);
+    }
+    if(puntajeMedio2 < puntosFinales && puntajeMedio1 > puntosFinales){
+      localStorage.setItem('puntajeMedio2', puntosFinales);
+    }
+    if(puntajeMenor < puntosFinales && puntajeMedio2 > puntosFinales){
+      localStorage.setItem('puntajeMenor', puntosFinales);
+    }
   }
+  
 }
 
 /*function intento(letra) {

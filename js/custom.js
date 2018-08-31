@@ -155,6 +155,10 @@ function toPuntuacion() {
     menu.classList.add('animationOut');
     puntuacion.style.display = "block";
     puntuacion.classList.add('animationIn');
+    var puntajeMayor=localStorage.getItem('puntajeMayor');
+    var puntajeMedio1=localStorage.getItem('puntajeMedio1');
+    var puntajeMedio2=localStorage.getItem('puntajeMedio2');
+    var puntajeMenor=localStorage.getItem('puntajeMenor');
 }
 
 function toThemes() {
