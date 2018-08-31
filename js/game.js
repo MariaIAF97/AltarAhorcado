@@ -34,7 +34,7 @@ function inicio() {
   var palabra = "";
   var rand;
   var cont = 7;
-
+}
 
 function inicio() {
     generaPalabra();
@@ -48,37 +48,6 @@ function generaPalabra() {
 
 function intento(letra) {
   document.getElementById(letra).disabled = true;
-  if (palabra.indexOf(letra) != -1) {
-    for (var i = 0; i < palabra.length; i++) {
-      if (palabra[i] == letra) oculta[i] = letra;
-    }
-    console.log("Acierto");
-  } else {
-    errors++;
-    console.log(errors);
-    // if (errors = 1) {
-    //   document.getElementById("fail1").style.visibility = "visible";
-    // }
-    // if (errors = 2) {
-    //   document.getElementById("fail2").style.visibility = "visible";
-    // }
-    // if (errors = 3) {
-    //   document.getElementById("fail3").style.visibility = "visible";
-    // }
-    // if (errors = 4) {
-    //   document.getElementById("fail4").style.visibility = "visible";
-    // }
-    // if (errors = 5) {
-    //   document.getElementById("fail5").style.visibility = "visible";
-    // }
-    // if (errors = 6) {
-    //   document.getElementById("fail6").style.visibility = "visible";
-    // }
-    // if (errors = 7) {
-    //   document.getElementById("fail7").style.visibility = "visible";
-    // }
-
-
   if(palabra.indexOf(letra) != -1) {
     for(var i=0; i<palabra.length; i++) {
       if(palabra[i]==letra) oculta.push(letra);
@@ -92,12 +61,36 @@ function intento(letra) {
         letters[i].classList.add('animation');
       }
     }
-  }else{
-      cont--;
-      console.log(cont);
-      console.log("Fallo");
-  }
+  } else {
+    cont--;
+    console.log(cont);
+    console.log("Fallo");
+    errors++;
+    console.log(errors);
+    if (cont == 6) {
+       document.getElementById("fail1").style.visibility = "visible";
+     }
+     if (cont == 5) {
+       document.getElementById("fail2").style.visibility = "visible";
+     }
+     if (cont == 4) {
+       document.getElementById("fail3").style.visibility = "visible";
+     }
+     if (cont == 3) {
+       document.getElementById("fail4").style.visibility = "visible";
+     }
+     if (cont == 2) {
+       document.getElementById("fail5").style.visibility = "visible";
+     }
+     if (cont == 1) {
+       document.getElementById("fail6").style.visibility = "visible";
+     }
+     if (cont == 0) {
+       document.getElementById("fail7").style.visibility = "visible";
+     }
+
   compruebaFin();
+}
 }
 
 /*function choseTopic(e){
