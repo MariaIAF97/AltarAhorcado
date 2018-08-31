@@ -46,7 +46,7 @@ function intento(letra) {
   }
 }
 
-function choseTopic(e){
+/*function choseTopic(e){
   item=e.target;
   if(item.getAttribute('clasif')=="colors"){
     chosenTopic=topics[1][Math.floor(Math.random()*topics[1].length)];
@@ -57,7 +57,7 @@ function choseTopic(e){
   if(item.getAttribute('clasif')=="animals"){
     chosenTopic=topics[2][Math.floor(Math.random()*topics[2].length)];
   }
-}
+}*/
 
 function choseCatrina(e){
   item=e.target;
