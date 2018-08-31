@@ -142,13 +142,13 @@ p.show{
 
 #unloaded.animation{
     animation-name: fadeOutIn;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 #loaded.animation{
     animation-name: fadeInOut;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -188,11 +188,13 @@ input:hover{
 
 .candles{
     position: relative;
+    top: 600px;
     opacity: 1;
 }
 
 .loaded-candles{
     position: relative;
+    top: 600px;
     opacity: 0;
 }
 
@@ -250,6 +252,14 @@ img.left-candle{
 #principal{
     display: none;
 }
+
+.background{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+}
+
 #principal.animationIn{
     animation-name: fadeInOut;
     animation-duration: 2s;

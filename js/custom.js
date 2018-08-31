@@ -76,6 +76,7 @@ function loadingScreentoInitScreen(event){
 function loadingScreentoInitScreenFade(event){
     var element=event.target;
     if(element.id=='loading'){
+        console.log("prubea");
         menu.style.display="block";
         menu.classList.add('animationIn');
     }
