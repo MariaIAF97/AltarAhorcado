@@ -43,6 +43,13 @@ function intento(letra) {
       if(palabra[i]==letra) oculta[i] = letra;
     }
     console.log("Acierto");
+    var letters=document.getElementsByClassName(letra.toLowerCase());
+    for(var i = 0; i < letters.length; i++){
+      if(!letters[i].classList.contains('animation')){
+        letters[i].style.display="block";
+        letters[i].classList.add('animation');
+      }
+    }
   }else{
       cont--;
       console.log(cont);
