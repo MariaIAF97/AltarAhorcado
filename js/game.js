@@ -23,10 +23,12 @@ var selectCat = function () {
   var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
   var palabra = "";
   var rand;
+  var cont = 7;
 
 
 function inicio() {
     generaPalabra();
+    cont = 7;
 }
 function generaPalabra() {
   rand = (Math.random() * 19).toFixed(0);
@@ -42,8 +44,11 @@ function intento(letra) {
     }
     console.log("Acierto");
   }else{
-    console.log("Fallo")
+      cont--;
+      console.log(cont);
+      console.log("Fallo");
   }
+  compruebaFin();
 }
 
 function choseTopic(e){
@@ -57,7 +62,7 @@ function choseTopic(e){
   if(item.getAttribute('clasif')=="animals"){
     chosenTopic=topics[2][Math.floor(Math.random()*topics[2].length)];
   }
-}*/
+}
 
 function choseCatrina(e){
   item=e.target;
@@ -69,6 +74,14 @@ function choseCatrina(e){
   }
   if(item.getAttribute('clasif')=="catrina3"){
     src="img/seleccion-catrina-3.jpg";
+  }
+}
+
+function compruebaFin() {
+  if( oculta.length == palabra.length) {
+    console.log("Ganó");
+  }else if( cont == 0 ) {
+    console.log("Perdió");
   }
 }
 
