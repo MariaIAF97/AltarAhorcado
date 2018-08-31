@@ -28,7 +28,7 @@ function init(){
     gameToMenu=document.getElementById('gameToMenu');
     btnPlay=document.getElementById('play');
     btnThemes=document.getElementById('btnTemas');
-    btnInicio=document.getElementById('btnInicio');
+    btnInicio=document.getElementById('btnInicioJuego');
     catrinas_screen=document.getElementById('catrinas');
     menu=document.getElementById('principal');
     unloaded_candles=document.getElementById("unloaded");
