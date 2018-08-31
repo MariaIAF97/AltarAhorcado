@@ -68,10 +68,7 @@ p{
     position: fixed;
     padding-left: 68%;
 }
-.margen{
-    padding-right: 47%; 
-    padding-left: 27%;
-}
+
 .boton-up{
     bottom: 15%;
     padding-top: 90%;
@@ -420,18 +417,18 @@ img.left-candle{
 #cara1{
     position: fixed;
     margin-top: 15%;
-    left: 5%; 
+    left: 33%; 
     
 }
 #cara2{
     position: fixed;
     margin-top: 59%;
-    left: 5%;
+    left: 33%;
 }
 #cara3{
     position: fixed;
     margin-top: 106%;
-    left: 5%;
+    left: 33%;
 }
 /* Juego */
 /* Catrina */
