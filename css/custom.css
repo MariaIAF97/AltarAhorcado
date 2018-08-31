@@ -522,5 +522,25 @@ img.left-candle{
     display: none;
 }
 
-
+/* Scores */
+.scores{
+    font-family: 'Gobold Regular';
+    color: white;
+    font-size: 3vw;
+    margin-left: 45%;
+    position: fixed;
+}
+#score1{
+   
+    margin-top:105% ;
+}
+#score2{
+   margin-top: 117%;
+}
+#score3{
+   margin-top:130% ;
+}
+#score4{
+   margin-top:145% ;
+}
 
