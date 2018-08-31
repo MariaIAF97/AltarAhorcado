@@ -64,13 +64,13 @@ function init() {
     loading();
 
     //Catrina
-    document.getElementById("face").style.visibility = "hidden";
-    document.getElementById("body1").style.visibility = "hidden";
-    document.getElementById("arm1").style.visibility = "hidden";
-    document.getElementById("arm2").style.visibility = "hidden";
-    document.getElementById("hip").style.visibility = "hidden";
-    document.getElementById("foot1").style.visibility = "hidden";
-    document.getElementById("foot2").style.visibility = "hidden";
+    document.getElementById("fail7").style.visibility="hidden";
+    document.getElementById("fail6").style.visibility="hidden";
+    document.getElementById("fail5").style.visibility="hidden";
+    document.getElementById("fail4").style.visibility="hidden";
+    document.getElementById("fail3").style.visibility="hidden";
+    document.getElementById("fail2").style.visibility="hidden";
+    document.getElementById("fail1").style.visibility="hidden";
 
 }
 

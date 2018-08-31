@@ -1,32 +1,35 @@
 
-var topics = ["Elementos","Colores","Animales"];
-topics[0]=["Llaves","Vaso","Catrina","Gafas"];
-topics[1]=["Rojo","Morado","Naranja","Azul"];
-topics[2]=["Leon","Elefante","Ternero","Cabra"];
+var topics = ["Elementos", "Colores", "Animales"];
+topics[0] = ["Llaves", "Vaso", "Catrina", "Gafas"];
+topics[1] = ["Rojo", "Morado", "Naranja", "Azul"];
+topics[2] = ["Leon", "Elefante", "Ternero", "Cabra"];
 var oculta = [];
 var src;
+var errors;
+var cont;
 
 
 var chosenTopic;
 //Select Category
 var selectCat = function () {
-    if (chosenTopic === topics[0]) {
-      alert("La categoría escogida es Elementos");
-    } else if (chosenTopic === topics[1]) {
-      alert("La categoría escogida es Colores");
-    } else if (chosenTopic === topics[2]) {
-      alert("La categoría escogida es Animales");
-    }
+  if (chosenTopic === topics[0]) {
+    alert("La categoría escogida es Elementos");
+  } else if (chosenTopic === topics[1]) {
+    alert("La categoría escogida es Colores");
+  } else if (chosenTopic === topics[2]) {
+    alert("La categoría escogida es Animales");
   }
+}
 
 
-  var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
-  var palabra = "";
-  var rand;
+var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
+var palabra = "";
+var rand;
 
 
 function inicio() {
-    generaPalabra();
+  generaPalabra();
+  errors = 0;
 }
 function generaPalabra() {
   rand = (Math.random() * 19).toFixed(0);
@@ -36,17 +39,41 @@ function generaPalabra() {
 
 function intento(letra) {
   document.getElementById(letra).disabled = true;
-  if(palabra.indexOf(letra) != -1) {
-    for(var i=0; i<palabra.length; i++) {
-      if(palabra[i]==letra) oculta[i] = letra;
+  if (palabra.indexOf(letra) != -1) {
+    for (var i = 0; i < palabra.length; i++) {
+      if (palabra[i] == letra) oculta[i] = letra;
     }
     console.log("Acierto");
-  }else{
-    console.log("Fallo")
+  } else {
+    errors++;
+    console.log(errors);
+    // if (errors = 1) {
+    //   document.getElementById("fail1").style.visibility = "visible";
+    // }
+    // if (errors = 2) {
+    //   document.getElementById("fail2").style.visibility = "visible";
+    // }
+    // if (errors = 3) {
+    //   document.getElementById("fail3").style.visibility = "visible";
+    // }
+    // if (errors = 4) {
+    //   document.getElementById("fail4").style.visibility = "visible";
+    // }
+    // if (errors = 5) {
+    //   document.getElementById("fail5").style.visibility = "visible";
+    // }
+    // if (errors = 6) {
+    //   document.getElementById("fail6").style.visibility = "visible";
+    // }
+    // if (errors = 7) {
+    //   document.getElementById("fail7").style.visibility = "visible";
+    // }
+
+
   }
 }
 
-function choseTopic(e){
+/*function choseTopic(e){
   item=e.target;
   if(item.getAttribute('clasif')=="colors"){
     chosenTopic=topics[1][Math.floor(Math.random()*topics[1].length)];
@@ -59,16 +86,16 @@ function choseTopic(e){
   }
 }*/
 
-function choseCatrina(e){
-  item=e.target;
-  if(item.getAttribute('clasif')=="catrina1"){
-    src="img/seleccion-catrina-1.jpg";
+function choseCatrina(e) {
+  item = e.target;
+  if (item.getAttribute('clasif') == "catrina1") {
+    src = "img/seleccion-catrina-1.jpg";
   }
-  if(item.getAttribute('clasif')=="catrina2"){
-    src="img/seleccion-catrina-2.jpg";
+  if (item.getAttribute('clasif') == "catrina2") {
+    src = "img/seleccion-catrina-2.jpg";
   }
-  if(item.getAttribute('clasif')=="catrina3"){
-    src="img/seleccion-catrina-3.jpg";
+  if (item.getAttribute('clasif') == "catrina3") {
+    src = "img/seleccion-catrina-3.jpg";
   }
 }
 

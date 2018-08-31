@@ -439,33 +439,33 @@ img.left-candle{
     position: fixed;
 
 }
-#face{
+#fail7{
     width: 8%;
     bottom: 51%;
     left: 51%;
 }
-#body1{
+#fail6{
     width: 5%;
     bottom: 48%;
     left: 54%;
 }
-#arm1{
+#fail5{
     bottom: 48%;
     left: 45%;
 }
-#arm2{
+#fail4{
     bottom: 45.5%;
     left: 58%;
 }
-#hip{
+#fail3{
     bottom: 46.5%;
     left: 52%;
 }
-#foot1{
+#fail2{
     bottom: 42%;
     left: 45%;
 }
-#foot2{
+#fail1{
     bottom: 42%;
     left: 56%;
 }
