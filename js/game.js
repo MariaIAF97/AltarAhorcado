@@ -46,7 +46,7 @@ function intento(letra) {
   }
 }
 
-/*function choseTopic(e){
+function choseTopic(e){
   item=e.target;
   if(item.getAttribute('clasif')=="colors"){
     chosenTopic=topics[1][Math.floor(Math.random()*topics[1].length)];

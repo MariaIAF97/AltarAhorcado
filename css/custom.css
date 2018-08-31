@@ -434,5 +434,41 @@ img.left-candle{
     left: 5%;
 }
 /* Juego */
+/* Catrina */
+.catrinaBody{
+    position: fixed;
+
+}
+#face{
+    width: 8%;
+    bottom: 51%;
+    left: 51%;
+}
+#body1{
+    width: 5%;
+    bottom: 48%;
+    left: 54%;
+}
+#arm1{
+    bottom: 48%;
+    left: 45%;
+}
+#arm2{
+    bottom: 45.5%;
+    left: 58%;
+}
+#hip{
+    bottom: 46.5%;
+    left: 52%;
+}
+#foot1{
+    bottom: 42%;
+    left: 45%;
+}
+#foot2{
+    bottom: 42%;
+    left: 56%;
+}
+/* Catrina */
 
 
