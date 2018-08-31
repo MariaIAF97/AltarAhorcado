@@ -19,6 +19,33 @@ var selectCat = function () {
     }
   }
 
+
+  var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
+  var palabra = "";
+  var rand;
+
+
+function inicio() {
+    generaPalabra();
+}
+function generaPalabra() {
+  rand = (Math.random() * 19).toFixed(0);
+  palabra = palabras[rand][0].toUpperCase();
+  console.log(palabra);
+}
+
+function intento(letra) {
+  document.getElementById(letra).disabled = true;
+  if(palabra.indexOf(letra) != -1) {
+    for(var i=0; i<palabra.length; i++) {
+      if(palabra[i]==letra) oculta[i] = letra;
+    }
+    console.log("Acierto");
+  }else{
+    console.log("Fallo")
+  }
+}
+
 function choseTopic(e){
   item=e.target;
   if(item.getAttribute('clasif')=="colors"){
@@ -45,7 +72,7 @@ function choseCatrina(e){
   }
 }
 
-function intento(letra) {
+/*function intento(letra) {
   document.getElementById(letra).disabled = true;
   if(chosenTopic.indexOf(letra) != -1) {
     for(var i=0; i<chosenTopic.length; i++) {
@@ -55,4 +82,4 @@ function intento(letra) {
   }else{
     console.log("Fallo")
   }
-}
+}*/
