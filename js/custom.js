@@ -155,10 +155,14 @@ function toPuntuacion() {
     menu.classList.add('animationOut');
     puntuacion.style.display = "block";
     puntuacion.classList.add('animationIn');
-    var puntajeMayor=localStorage.getItem('puntajeMayor');
-    var puntajeMedio1=localStorage.getItem('puntajeMedio1');
-    var puntajeMedio2=localStorage.getItem('puntajeMedio2');
-    var puntajeMenor=localStorage.getItem('puntajeMenor');
+    var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
+    var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
+    var puntajeMedio2=localStorage.getItem('puntajeMedio2')!=null?localStorage.getItem('puntajeMedio2'):0;
+    var puntajeMenor=localStorage.getItem('puntajeMenor')!=null?localStorage.getItem('puntajeMenor'):0;
+    document.getElementById('score1').innerHTML=puntajeMayor;
+    document.getElementById('score2').innerHTML=puntajeMedio1;
+    document.getElementById('score3').innerHTML=puntajeMedio2;
+    document.getElementById('score4').innerHTML=puntajeMenor;
 }
 
 function toThemes() {
@@ -173,7 +177,7 @@ function backToMenu(event) {
     if (element.classList.contains('second')) {
         element.parentElement.parentElement.classList.add('animationOut');
     } else {
-        element.parentElement.parentElement.parentElement.classList.add('animationOut');
+        element.parentElement.parentElement.classList.add('animationOut');
     }
     menu.style.display = "block";
     menu.classList.add('animationIn');
