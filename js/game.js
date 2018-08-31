@@ -41,8 +41,7 @@ function inicio() {
     cont = 7;
 }
 function generaPalabra() {
-  rand = (Math.random() * 19).toFixed(0);
-  palabra = palabras[rand][0].toUpperCase();
+  palabra = "ELEFANTE";
   console.log(palabra);
 }
 
