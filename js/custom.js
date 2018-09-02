@@ -75,7 +75,7 @@ function init() {
 }
 
 function showText() {
-    if (visible == false) {
+    if (!false) {
         instructions.classList.add('show');
     }
 }

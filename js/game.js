@@ -7,6 +7,7 @@ var oculta = [];
 var src;
 var errors;
 var cont;
+var buttons = document.getElementsByClassName('letra');
 
 
 var chosenTopic;
@@ -30,16 +31,23 @@ var rand;
 function inicio() {
   generaPalabra();
   errors = 0;
+  var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
+  var palabra = "";
+  var rand;
   var cont = 7;
 }
 
+function inicio() {
+    generaPalabra();
+    cont = 7;
+}
 function generaPalabra() {
   palabra = "ELEFANTE";
   console.log(palabra);
 }
 
 function intento(letra) {
-  document.getElementById(letra).disabled = true;
+  document.getElementById(letra).hidden = true;
   if(palabra.indexOf(letra) != -1) {
     for(var i=0; i<palabra.length; i++) {
       if(palabra[i]==letra) oculta.push(letra);
@@ -52,13 +60,12 @@ function intento(letra) {
         letters[i].style.display="block";
         letters[i].classList.add('animation');
       }
-    }
+    } 
   } else {
     cont--;
     console.log(cont);
     console.log("Fallo");
     errors++;
-    console.log(errors);
     if (cont == 6) {
        document.getElementById("fail1").style.visibility = "visible";
      }
@@ -79,10 +86,9 @@ function intento(letra) {
      }
      if (cont == 0) {
        document.getElementById("fail7").style.visibility = "visible";
-     }  
-  
-    }
-    compruebaFin();
+     }
+  }
+  compruebaFin();
 }
 
 /*function choseTopic(e){
@@ -114,7 +120,10 @@ function choseCatrina(e) {
 function compruebaFin() {
   if( oculta.length == palabra.length) {
     console.log("Ganó");
-    alert("GANASTEEE");
+    //document.getElementById("msg-final").innerHTML = "GANASTE";
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
     puntosFinales=oculta.length*3456;
     var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
     var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
@@ -136,7 +145,10 @@ function compruebaFin() {
     
   }else if( cont == 0 ) {
     console.log("Perdió");
-
+    //document.getElementById("msg-final").innerHTML = "PERDISTE";
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
     puntosFinales=oculta.length*3456;
     var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
     var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
