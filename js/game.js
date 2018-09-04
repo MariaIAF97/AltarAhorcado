@@ -1,4 +1,3 @@
-
 var topics = ["Elementos", "Colores", "Animales"];
 topics[0] = ["Llaves", "Vaso", "Catrina", "Gafas"];
 topics[1] = ["Rojo", "Morado", "Naranja", "Azul"];
@@ -8,19 +7,52 @@ var src;
 var errors;
 var cont;
 var buttons = document.getElementsByClassName('letra');
-
-
 var chosenTopic;
+var btnElemento=document.getElementById("elemento");
+var btnColor=document.getElementById("color");
+var btnAnimal=document.getElementById("animal");
+var btnCatrina1=document.getElementById("cara1");
+var btnCatrina2=document.getElementById("cara2");
+var btnCatrina3=document.getElementById("cara3");
+
+var chosenCatrina;
+var chosenTopic;
+
 //Select Category
-var selectCat = function () {
-  if (chosenTopic === topics[0]) {
-    alert("La categoría escogida es Elementos");
-  } else if (chosenTopic === topics[1]) {
-    alert("La categoría escogida es Colores");
-  } else if (chosenTopic === topics[2]) {
-    alert("La categoría escogida es Animales");
-  }
-}
+btnElemento.addEventListener("click",function(e){
+  alert("La categoría escogida es Elementos");
+  chosenTopic=topics[0];
+  alert(chosenTopic);
+
+  }); 
+
+btnColor.addEventListener("click",function(e){
+  alert("La categoría escogida es Colores");
+  chosenTopic=topics[1];
+  alert(chosenTopic);
+
+  }); 
+btnAnimal.addEventListener("click",function(e){
+  alert("La categoría escogida es Animales");
+  chosenTopic=topics[2];
+  alert(chosenTopic);
+
+  }); 
+
+//Select catrina
+btnCatrina1.addEventListener("click",function(e){
+  alert("La catrina escogida es la catrina #1");
+  chosenCatrina=1;
+  }); 
+  btnCatrina2.addEventListener("click",function(e){
+  alert("La catrina escogida es la catrina #2");
+  chosenCatrina=2;
+
+  }); 
+  btnCatrina3.addEventListener("click",function(e){
+  alert("La catrina escogida es la catrina #3");
+  chosenCatrina=3;
+  }); 
 
 
 var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];

@@ -9,11 +9,11 @@ function init() {
 
     allTopics = document.getElementsByClassName("theme-selection");
 
-    for (var i = 0; i < allTopics.length; i++) {
-        allTopics[i].addEventListener('click', function (e) {
-            choseTopic(e);
-        });
-    }
+    // for (var i = 0; i < allTopics.length; i++) {
+    //     allTopics[i].addEventListener('click', function (e) {
+    //         choseTopic(e);
+    //     });
+    // }
 
 
     instructions = document.getElementById("instructions-text");
