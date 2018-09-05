@@ -7,6 +7,15 @@
     font-family: 'Cocogoose Light';
     src: url('../typ/tipografiaTextoCorrido/Cocogoose Pro Light-trial.ttf');
 }
+#temaSeleccionado{
+    font-family: 'Gobold Regular';
+    position: fixed;
+    margin-top: 30%;
+    margin-left: 28%;
+    text-align: center;
+    color:white;
+    font-size: 4vw;
+}
 
 p{ 
     font-size: 2.6vw;

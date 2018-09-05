@@ -4,6 +4,8 @@ var btnInstructions, instructions_section, toMenu, puntuacion, btnPuntuacion, bt
 var btnCatrinas, catrinas_screen, game_screen, themeToCatrina, btnPlay, gameToMenu, credits, btnCredits;
 var isDone = false;
 var visible = false;
+var lblCategoria;
+
 
 function init() {
 
@@ -15,7 +17,7 @@ function init() {
     //     });
     // }
 
-
+    lblCategoria=document.getElementById("temaSeleccionado");
     instructions = document.getElementById("instructions-text");
     btnInstructions = document.getElementById("btnInstrucciones");
     instructions_section = document.getElementById("instructions");
@@ -135,6 +137,7 @@ function toGame() {
     catrinas_screen.classList.add('animationOut');
     game_screen.style.display = "block";
     game_screen.classList.add('animationIn');
+    lblCategoria.innerHTML="Tema seleccionado: "+chosenCategory;
 }
 
 function toCatrinas(event) {
