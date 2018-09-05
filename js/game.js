@@ -2,6 +2,7 @@ var topics = ["Elementos", "Colores", "Animales"];
 topics[0] = ["Llaves", "Vaso", "Catrina", "Gafas"];
 topics[1] = ["Rojo", "Morado", "Naranja", "Azul"];
 topics[2] = ["Leon", "Elefante", "Ternero", "Cabra"];
+var categorias = new Array();
 var oculta = [];
 var src;
 var errors;
@@ -10,6 +11,9 @@ var buttons = document.getElementsByClassName('letra');
 var chosenTopic;
 var chosenCategory;
 var chosenCatrina;
+var palabra = "";
+var rand;
+var seleccionarPalabra;
 var btnElemento = document.getElementById("elemento");
 var btnColor = document.getElementById("color");
 var btnAnimal = document.getElementById("animal");
@@ -56,15 +60,12 @@ btnCatrina3.addEventListener("click", function (e) {
 });
 btnCatrina3.addEventListener('click', toGame);
 
-var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
-var palabra = "";
-var rand;
+
 
 
 function inicio() {
   generaPalabra();
   errors = 0;
-  var palabras = [["atlantico", "Un océano"], ["ordenador", "Una máquina"], ["laurel", "Un árbol"], ["plaza", "Espacio público"], ["rueda", "Gran invento"], ["cereza", "Una fruta"], ["petanca", "Un juego"], ["higuera", "Un árbol"], ["everest", "Un monte"], ["relampago", "Antecede al trueno"], ["jirafa", "Un animal"], ["luxemburgo", "Un país"], ["uruguay", "Un país"], ["ilustracion", "Representación gráfica"], ["excursion", "Actividad en la naturaleza"], ["empanadilla", "De la panadería"], ["pastel", "De la pastelería"], ["colegio", "Lugar para estudiar"], ["carrera", "Competición"], ["mermelada", "Confitura"]];
   var palabra = "";
   var rand;
   var cont = 7;
@@ -74,9 +75,19 @@ function inicio() {
   generaPalabra();
   cont = 7;
 }
-function generaPalabra() {
+function generaPalabra() { 
   palabra = "ELEFANTE";
   console.log(palabra);
+  rand = (Math.random()*3).toFixed(0);
+  if(chosenCategory == "Elementos"){
+     console.log(topics[0][rand].toUpperCase());
+  }
+  if(chosenCategory == "Colores"){
+    console.log(topics[1][rand].toUpperCase());
+ }
+ if(chosenCategory == "Animales"){
+  console.log(topics[2][rand].toUpperCase());
+}
 }
 
 function intento(letra) {
