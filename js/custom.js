@@ -66,7 +66,9 @@ function init() {
     loading();
 
     //Catrina
-    document.getElementById("fail7").style.visibility="hidden";
+    document.getElementById("fail7A").style.visibility="hidden";
+    document.getElementById("fail7B").style.visibility="hidden";
+    document.getElementById("fail7C").style.visibility="hidden";
     document.getElementById("fail6").style.visibility="hidden";
     document.getElementById("fail5").style.visibility="hidden";
     document.getElementById("fail4").style.visibility="hidden";

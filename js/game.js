@@ -117,8 +117,14 @@ function intento(letra) {
     if (cont == 1) {
       document.getElementById("fail6").style.visibility = "visible";
     }
-    if (cont == 0) {
-      document.getElementById("fail7").style.visibility = "visible";
+    if (cont == 0 && chosenCatrina==1) {
+      document.getElementById("fail7A").style.visibility = "visible";
+    }
+    if (cont == 0 && chosenCatrina==2) {
+      document.getElementById("fail7B").style.visibility = "visible";
+    }
+    if (cont == 0 && chosenCatrina==3) {
+      document.getElementById("fail7C").style.visibility = "visible";
     }
   }
   compruebaFin();
