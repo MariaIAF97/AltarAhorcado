@@ -2,6 +2,8 @@ window.onload = init;
 var instructions, body, unloaded_candles, loaded_candles, loading_screen, themes, menu;
 var btnInstructions, instructions_section, toMenu, puntuacion, btnPuntuacion, btnInicio, btnThemes;
 var btnCatrinas, catrinas_screen, game_screen, themeToCatrina, btnPlay, gameToMenu, credits, btnCredits;
+var inputs;
+var sc1, sc2, sc3, sc4;
 var isDone = false;
 var visible = false;
 var lblCategoria;
@@ -27,6 +29,8 @@ function init() {
         toMenu[i].addEventListener('click', backToMenu);
     }
 
+    inputs=document.getElementsByTagName('input');
+
     instructions_section.addEventListener('click', showText);
     loading_screen = document.getElementById('loading');
     themes = document.getElementById('themes');
@@ -43,12 +47,11 @@ function init() {
     menu = document.getElementById('principal');
     unloaded_candles = document.getElementById("unloaded");
     loaded_candles = document.getElementById("loaded");
-    btnInstructions.addEventListener('click', toInstructions);
-    btnPuntuacion.addEventListener('click', toPuntuacion);
-    btnInicio.addEventListener('click', toThemes);
-    btnThemes.addEventListener('click', toThemes);
-    btnCredits.addEventListener('click', toCredits);
-    btnCatrinas.addEventListener('click', toCatrinas);
+    btnInstructions.addEventListener('click', changeScreen);
+    btnPuntuacion.addEventListener('click', changeScreen);
+    btnInicio.addEventListener('click', changeScreen);
+    btnThemes.addEventListener('click', changeScreen);
+    btnCredits.addEventListener('click', changeScreen);
     loaded_candles.addEventListener('animationend', principalMenu);
     menu.addEventListener('animationend', dissapear);
     instructions_section.addEventListener('animationend', dissapear);
@@ -71,6 +74,12 @@ function init() {
     document.getElementById("fail3").style.visibility="hidden";
     document.getElementById("fail2").style.visibility="hidden";
     document.getElementById("fail1").style.visibility="hidden";
+
+    //Puntaje
+    sc1=document.getElementById('score1');
+    sc2=document.getElementById('score2');
+    sc3=document.getElementById('score3');
+    sc4=document.getElementById('score4');
 
 }
 
@@ -113,64 +122,66 @@ function dissapear(event) {
         element.classList.remove('animationOut');
         element.classList.remove('animationIn');
     }
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].disabled=false;
+    }
 }
 
-function toInstructions(event) {
-    console.log("prueba");
-    menu.classList.remove('animationIn');
-    menu.classList.add('animationOut');
-    instructions_section.style.display = "block";
-    instructions_section.classList.add('animationIn');
-}
-
-function toCredits(event) {
-    menu.classList.remove('animationIn');
-    menu.classList.add('animationOut');
-    credits.style.display = "block";
-    credits.classList.add('animationIn');
-}
-
-function toGame() {
-    catrinas_screen.classList.remove('animationIn');
-    catrinas_screen.classList.add('animationOut');
-    game_screen.style.display = "block";
-    game_screen.classList.add('animationIn');
-    lblCategoria.innerHTML="Tema seleccionado: "+chosenCategory;
-}
-
-function toCatrinas(event) {
-    var element = event.target;
-    if (element.id == "btnCatrinas") {
+function changeScreen(){
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].disabled=true;
+    }
+    if(this.classList.contains('toInstructions')){
         menu.classList.remove('animationIn');
         menu.classList.add('animationOut');
-    } else {
-        themes.classList.remove('animationIn');
-        themes.classList.add('animationOut');
+        instructions_section.style.display = "block";
+        instructions_section.classList.add('animationIn');
     }
-    catrinas_screen.style.display = "block";
-    catrinas_screen.classList.add('animationIn');
-}
+    if(this.classList.contains('toThemes')){
+        menu.classList.remove('animationIn');
+        menu.classList.add('animationOut');
+        themes.style.display = "block";
+        themes.classList.add('animationIn');
+    }
+    if(this.classList.contains('toCredits')){
+        menu.classList.remove('animationIn');
+        menu.classList.add('animationOut');
+        credits.style.display = "block";
+        credits.classList.add('animationIn');
+    }
+    if(this.classList.contains('toCatrinas')){
+        if (this.id == "btnCatrinas") {
+            menu.classList.remove('animationIn');
+            menu.classList.add('animationOut');
+        } else {
+            themes.classList.remove('animationIn');
+            themes.classList.add('animationOut');
+        }
+        catrinas_screen.style.display = "block";
+        catrinas_screen.classList.add('animationIn');
+    }
+    if(this.classList.contains('toScore')){
+        menu.classList.remove('animationIn');
+        menu.classList.add('animationOut');
+        puntuacion.style.display = "block";
+        puntuacion.classList.add('animationIn');
+        var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
+        var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
+        var puntajeMedio2=localStorage.getItem('puntajeMedio2')!=null?localStorage.getItem('puntajeMedio2'):0;
+        var puntajeMenor=localStorage.getItem('puntajeMenor')!=null?localStorage.getItem('puntajeMenor'):0;
+        sc1.innerHTML=puntajeMayor;
+        sc2.innerHTML=puntajeMedio1;
+        sc3.innerHTML=puntajeMedio2;
+        sc4.innerHTML=puntajeMenor;
+    }
+    if(this.classList.contains('toGame')){
+        catrinas_screen.classList.remove('animationIn');
+        catrinas_screen.classList.add('animationOut');
+        game_screen.style.display = "block";
+        game_screen.classList.add('animationIn');
+        lblCategoria.innerHTML="Tema seleccionado: "+chosenCategory;
+    }
 
-function toPuntuacion() {
-    menu.classList.remove('animationIn');
-    menu.classList.add('animationOut');
-    puntuacion.style.display = "block";
-    puntuacion.classList.add('animationIn');
-    var puntajeMayor=localStorage.getItem('puntajeMayor')!=null?localStorage.getItem('puntajeMayor'):0;
-    var puntajeMedio1=localStorage.getItem('puntajeMedio1')!=null?localStorage.getItem('puntajeMedio1'):0;
-    var puntajeMedio2=localStorage.getItem('puntajeMedio2')!=null?localStorage.getItem('puntajeMedio2'):0;
-    var puntajeMenor=localStorage.getItem('puntajeMenor')!=null?localStorage.getItem('puntajeMenor'):0;
-    document.getElementById('score1').innerHTML=puntajeMayor;
-    document.getElementById('score2').innerHTML=puntajeMedio1;
-    document.getElementById('score3').innerHTML=puntajeMedio2;
-    document.getElementById('score4').innerHTML=puntajeMenor;
-}
-
-function toThemes() {
-    menu.classList.remove('animationIn');
-    menu.classList.add('animationOut');
-    themes.style.display = "block";
-    themes.classList.add('animationIn');
 }
 
 function backToMenu(event) {

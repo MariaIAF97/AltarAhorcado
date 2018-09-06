@@ -28,37 +28,37 @@ btnElemento.addEventListener("click", function (e) {
   chosenCategory = "Elementos";
   chosenTopic = topics[0];
 });
-btnElemento.addEventListener('click', toCatrinas);
+btnElemento.addEventListener('click', changeScreen);
 
 btnColor.addEventListener("click", function (e) {
   chosenCategory = "Colores";
   chosenTopic = topics[1];
 });
-btnColor.addEventListener('click', toCatrinas);
+btnColor.addEventListener('click', changeScreen);
 
 btnAnimal.addEventListener("click", function (e) {
   chosenCategory = "Animales";
   chosenTopic = topics[2];
 });
-btnAnimal.addEventListener('click', toCatrinas);
+btnAnimal.addEventListener('click', changeScreen);
 
 
 //Select catrina
 btnCatrina1.addEventListener("click", function (e) {
   chosenCatrina = 1;
 });
-btnCatrina1.addEventListener('click', toGame);
+btnCatrina1.addEventListener('click', changeScreen);
 
 btnCatrina2.addEventListener("click", function (e) {
   chosenCatrina = 2;
 
 });
-btnCatrina2.addEventListener('click', toGame);
+btnCatrina2.addEventListener('click', changeScreen);
 
 btnCatrina3.addEventListener("click", function (e) {
   chosenCatrina = 3;
 });
-btnCatrina3.addEventListener('click', toGame);
+btnCatrina3.addEventListener('click', changeScreen);
 
 
 
