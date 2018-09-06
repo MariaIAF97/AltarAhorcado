@@ -115,59 +115,58 @@ function generaABC (a,z) {
     for( ; i<=j; i++) {
       letra = String.fromCharCode(i).toLowerCase();
       document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septima "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard octava "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segundaL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard terceraL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuartaL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quintaL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sextaL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septimaL8 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard octavaL8 "+ letra +"' id='"+letra+"'/>";
     }
   }
   if(palabraJuego.length == 7){
     for( ; i<=j; i++) {
       letra = String.fromCharCode(i).toLowerCase();
       document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septima "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segundaL7 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard terceraL7 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuartaL7 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quintaL7 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sextaL7 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septimaL7 "+ letra +"' id='"+letra+"'/>";
     }
   }
   if(palabraJuego.length == 5){
     for( ; i<=j; i++) {
       letra = String.fromCharCode(i).toLowerCase();
       document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segundaL5 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard terceraL5 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuartaL5 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quintaL5 "+ letra +"' id='"+letra+"'/>";
     }
   }
   if(palabraJuego.length == 4){
     for( ; i<=j; i++) {
       letra = String.fromCharCode(i).toLowerCase();
       document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segundaL4 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard terceraL4 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuartaL4 "+ letra +"' id='"+letra+"'/>";
     }
   }
   if(palabraJuego.length == 6){
     for( ; i<=j; i++) {
       letra = String.fromCharCode(i).toLowerCase();
       document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
-      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segundaL6 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard terceraL6 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuartaL6 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quintaL6 "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sextaL6 "+ letra +"' id='"+letra+"'/>";
     }
   }
 }
-
 function intento(letra) {
   document.getElementById(letra).hidden = true;
   if (palabra.indexOf(letra) != -1) {
