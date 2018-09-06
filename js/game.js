@@ -1,5 +1,5 @@
 var topics = ["Elementos", "Colores", "Animales"];
-topics[0] = ["Llaves", "Vaso", "Catrina", "Gafas"];
+topics[0] = ["Llaves", "Vaso", "Catrina", "Gafas","Elemento"];
 topics[1] = ["Rojo", "Morado", "Naranja", "Azul"];
 topics[2] = ["Leon", "Elefante", "Ternero", "Cabra"];
 var categorias = new Array();
@@ -13,7 +13,7 @@ var chosenCategory;
 var chosenCatrina;
 var palabra = "";
 var rand = (Math.random() * 3).toFixed(0);
-var seleccionarPalabra;
+var palabraSeleccionada;
 var palabraJuego;
 var btnElemento = document.getElementById("elemento");
 var btnColor = document.getElementById("color");
@@ -29,7 +29,7 @@ btnElemento.addEventListener("click", function (e) {
   chosenCategory = "Elementos";
   chosenTopic = topics[0];
   palabra = topics[0][rand].toUpperCase();
-  seleccionarPalabra = palabra;
+  palabraSeleccionada = palabra;
 });
 btnElemento.addEventListener('click', changeScreen);
 
@@ -37,7 +37,7 @@ btnColor.addEventListener("click", function (e) {
   chosenCategory = "Colores";
   chosenTopic = topics[1];
   palabra = topics[1][rand].toUpperCase();
-  seleccionarPalabra = palabra;
+  palabraSeleccionada = palabra;
 });
 btnColor.addEventListener('click', changeScreen);
 
@@ -45,7 +45,7 @@ btnAnimal.addEventListener("click", function (e) {
   chosenCategory = "Animales";
   chosenTopic = topics[2];
   palabra = topics[2][rand].toUpperCase();
-  seleccionarPalabra = palabra;
+  palabraSeleccionada = palabra;
   
 });
 btnAnimal.addEventListener('click', changeScreen);
@@ -72,7 +72,7 @@ btnCatrina3.addEventListener('click', changeScreen);
 
 
 function inicio() {
-  generarFondo(seleccionarPalabra);
+  generarFondo(palabraSeleccionada);
   generaPalabra();
   errors = 0;
   var palabra = "";
@@ -82,11 +82,12 @@ function inicio() {
   
 }
 
-// function inicio() {
-//   generaPalabra();
-//   cont = 7;
-//   generaABC("a","z");
-// }
+function inicio() {
+  generarFondo(palabraSeleccionada);
+  generaPalabra();
+  cont = 7;
+  generaABC("a","z");
+}
 function generarFondo(palabra){
   if(palabra.length == 4){
     document.getElementById("seleccionFondo").src="img/LEON.jpg"
@@ -105,7 +106,7 @@ function generarFondo(palabra){
   }
 }
 function generaPalabra() { 
-  palabraJuego = seleccionarPalabra;
+  palabraJuego = palabraSeleccionada;
   console.log(palabraJuego);
 }
 function generaABC (a,z) {

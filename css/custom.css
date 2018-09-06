@@ -530,6 +530,112 @@ img.left-candle{
     display: none;
 }
 
+.keyboard.segundaL7{
+    left: 23%;
+    top:21.5%;
+    display: none;
+}
+
+.keyboard.terceraL7{
+    left: 34%;
+    display: none;
+    top:13.7%;
+}
+
+.keyboard.cuartaL7{
+    left: 43%;
+    top:21.5%;
+    display: none;
+}
+.keyboard.quintaL7{
+    left: 53%;
+    top:13.7%;
+    display: none;
+}
+
+.keyboard.sextaL7{
+    left: 63%;
+    top:21.5%;
+    display: none;
+}
+
+.keyboard.septimaL7{
+    left: 74%;
+    top:13.7%;
+    display: none;
+}
+
+
+.keyboard.segundaL6{
+    left: 34%;
+    top:13.7%;
+    display: none;
+}
+
+.keyboard.terceraL6{
+    left: 43%;
+    display: none;
+    top:21.5%;
+}
+
+.keyboard.cuartaL6{
+    left: 53%;
+    top:13.7%;
+    display: none;
+}
+.keyboard.quintaL6{
+    left: 63%;
+    top:21.5%;
+    display: none;
+}
+
+.keyboard.sextaL6{
+    left: 74%;
+    top:13.7%;
+    display: none;
+}
+
+
+.keyboard.segundaL5{
+    left: 34%;
+    top:13.7%;
+    display: none;
+}
+
+.keyboard.terceraL5{
+    left: 43%;
+    display: none;
+    top:21.5%;
+}
+
+.keyboard.cuartaL5{
+    left: 53%;
+    top:13.7%;
+    display: none;
+}
+.keyboard.quintaL5{
+    left: 74%;
+    top:13.7%;
+    display: none;
+}
+
+.keyboard.segundaL4{
+    left: 34%;
+    top:13.7%;
+    display: none;
+}
+
+.keyboard.terceraL4{
+    left: 53%;
+    display: none;
+    top:13.7%;
+}
+
+.keyboard.cuartaL4{
+    left: 74%;
+    top:13.7%;
+    display: none;
+}
 /*Armado de palabra*/
 
 /* Scores */
