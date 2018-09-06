@@ -12,8 +12,9 @@ var chosenTopic;
 var chosenCategory;
 var chosenCatrina;
 var palabra = "";
-var rand;
+var rand = (Math.random() * 3).toFixed(0);
 var seleccionarPalabra;
+var palabraJuego;
 var btnElemento = document.getElementById("elemento");
 var btnColor = document.getElementById("color");
 var btnAnimal = document.getElementById("animal");
@@ -27,18 +28,25 @@ btnElemento.addEventListener("click", function (e) {
   //alert("La categoría escogida es Elementos");
   chosenCategory = "Elementos";
   chosenTopic = topics[0];
+  palabra = topics[0][rand].toUpperCase();
+  seleccionarPalabra = palabra;
 });
 btnElemento.addEventListener('click', changeScreen);
 
 btnColor.addEventListener("click", function (e) {
   chosenCategory = "Colores";
   chosenTopic = topics[1];
+  palabra = topics[1][rand].toUpperCase();
+  seleccionarPalabra = palabra;
 });
 btnColor.addEventListener('click', changeScreen);
 
 btnAnimal.addEventListener("click", function (e) {
   chosenCategory = "Animales";
   chosenTopic = topics[2];
+  palabra = topics[2][rand].toUpperCase();
+  seleccionarPalabra = palabra;
+  
 });
 btnAnimal.addEventListener('click', changeScreen);
 
@@ -64,47 +72,125 @@ btnCatrina3.addEventListener('click', changeScreen);
 
 
 function inicio() {
+  generarFondo(seleccionarPalabra);
   generaPalabra();
   errors = 0;
   var palabra = "";
   var rand;
   var cont = 7;
+  generaABC("a","z");
+  
 }
 
-function inicio() {
-  generaPalabra();
-  cont = 7;
+// function inicio() {
+//   generaPalabra();
+//   cont = 7;
+//   generaABC("a","z");
+// }
+function generarFondo(palabra){
+  if(palabra.length == 4){
+    document.getElementById("seleccionFondo").src="img/LEON.jpg"
+  }
+  if(palabra.length == 8){
+    document.getElementById("seleccionFondo").src="img/ELEFANTE.jpg"
+  }
+  if(palabra.length == 7){
+    document.getElementById("seleccionFondo").src="img/TERNERO.jpg"
+  }
+  if(palabra.length == 5){
+    document.getElementById("seleccionFondo").src="img/CABRA.jpg"
+  }
+  if(palabra.length == 6){
+    document.getElementById("seleccionFondo").src="img/MORADO.jpg"
+  }
 }
 function generaPalabra() { 
-  palabra = "ELEFANTE";
-  console.log(palabra);
-  rand = (Math.random()*3).toFixed(0);
-  if(chosenCategory == "Elementos"){
-     console.log(topics[0][rand].toUpperCase());
-  }
-  if(chosenCategory == "Colores"){
-    console.log(topics[1][rand].toUpperCase());
- }
- if(chosenCategory == "Animales"){
-  console.log(topics[2][rand].toUpperCase());
+  palabraJuego = seleccionarPalabra;
+  console.log(palabraJuego);
 }
+function generaABC (a,z) {
+  var i = a.charCodeAt(0), j = z.charCodeAt(0);
+  var letra = "";
+  if(palabraJuego.length == 8){
+    for( ; i<=j; i++) {
+      letra = String.fromCharCode(i).toLowerCase();
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septima "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard octava "+ letra +"' id='"+letra+"'/>";
+    }
+  }
+  if(palabraJuego.length == 7){
+    for( ; i<=j; i++) {
+      letra = String.fromCharCode(i).toLowerCase();
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard septima "+ letra +"' id='"+letra+"'/>";
+    }
+  }
+  if(palabraJuego.length == 5){
+    for( ; i<=j; i++) {
+      letra = String.fromCharCode(i).toLowerCase();
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
+    }
+  }
+  if(palabraJuego.length == 4){
+    for( ; i<=j; i++) {
+      letra = String.fromCharCode(i).toLowerCase();
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+    }
+  }
+  if(palabraJuego.length == 6){
+    for( ; i<=j; i++) {
+      letra = String.fromCharCode(i).toLowerCase();
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard primera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard segunda "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard tercera "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard cuarta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard quinta "+ letra +"' id='"+letra+"'/>";
+      document.getElementById("game").innerHTML += "<input type= 'image' value='" + letra + "' class='keyboard sexta "+ letra +"' id='"+letra+"'/>";
+    }
+  }
 }
 
 function intento(letra) {
   document.getElementById(letra).hidden = true;
   if (palabra.indexOf(letra) != -1) {
     for (var i = 0; i < palabra.length; i++) {
-      if (palabra[i] == letra) oculta.push(letra);
+        if (palabra[i] == letra) {
+          oculta.push(letra);
+          var letters = document.getElementsByClassName(letra.toLowerCase());
+          if (!letters[i].classList.contains('animation')) {
+            letters[i].src="img/TECLADO-" + letra +".jpg";
+             letters[i].style.display = "block";
+            letters[i].classList.add('animation');
+           }
+        }
     }
     console.log("Acierto");
     console.log(oculta.length);
-    var letters = document.getElementsByClassName(letra.toLowerCase());
-    for (var i = 0; i < letters.length; i++) {
-      if (!letters[i].classList.contains('animation')) {
-        letters[i].style.display = "block";
-        letters[i].classList.add('animation');
-      }
-    }
+    // for (var i = 0; i < letters.length; i++) {
+    //   if (!letters[i].classList.contains('animation')) {
+    //     letters[i].src="img/TECLADO-" + letra +".jpg";
+    //     letters[i].style.display = "block";
+    //     letters[i].classList.add('animation');
+    //   }
+    // }
   } else {
     cont--;
     console.log(cont);
