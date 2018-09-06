@@ -10,7 +10,7 @@
 #temaSeleccionado{
     font-family: 'Gobold Regular';
     position: fixed;
-    margin-top: 30%;
+    margin-top: 50%;
     margin-left: 28%;
     text-align: center;
     color:white;
@@ -158,7 +158,7 @@ input.puntuacion{
     margin-right: 3% !important;
 }
 
-#btnToMenu{
+.btnToMenu{
     float: right;
     margin-right: 21%;
 }
@@ -358,12 +358,12 @@ img.left-candle{
 }
 #btnPausa{
     position: fixed;
-    bottom:6% ;
+    bottom:4% ;
     left: 82%;
 }
 #btnMenu{
     position: fixed;
-    bottom:6% ;
+    bottom:4% ;
     left: 70%;
 }
 .keyboard{
@@ -408,36 +408,36 @@ img.left-candle{
 }
 #animal{
     position: fixed;
-    margin-top: 45%;
+    margin-top: 65%;
     left: 27%; 
     
 }
 #color{
     position: fixed;
-    margin-top: 71%;
+    margin-top: 92%;
     left: 27%;
 }
 #elemento{
     position: fixed;
-    margin-top: 97%;
+    margin-top: 120%;
     left: 27%;
 }
 
 #cara1{
     position: fixed;
-    margin-top: 15%;
-    left: 33%; 
+    margin-top: 14%;
+    left: 34%; 
     
 }
 #cara2{
     position: fixed;
-    margin-top: 59%;
-    left: 33%;
+    margin-top: 60%;
+    left: 34%;
 }
 #cara3{
     position: fixed;
     margin-top: 106%;
-    left: 33%;
+    left: 34%;
 }
 /* Juego */
 /* Catrina */

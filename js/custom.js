@@ -35,10 +35,8 @@ function init() {
     btnCredits = document.getElementById('btnCreditos');
     credits = document.getElementById('credits');
     btnCatrinas = document.getElementById('btnCatrinas');
-    themeToCatrina = document.getElementById('toCatrina');
     game_screen = document.getElementById('game');
     gameToMenu = document.getElementById('gameToMenu');
-    btnPlay = document.getElementById('play');
     btnThemes = document.getElementById('btnTemas');
     btnInicio = document.getElementById('btnInicioJuego');
     catrinas_screen = document.getElementById('catrinas');
@@ -46,8 +44,6 @@ function init() {
     unloaded_candles = document.getElementById("unloaded");
     loaded_candles = document.getElementById("loaded");
     btnInstructions.addEventListener('click', toInstructions);
-    themeToCatrina.addEventListener('click', toCatrinas);
-    btnPlay.addEventListener('click', toGame);
     btnPuntuacion.addEventListener('click', toPuntuacion);
     btnInicio.addEventListener('click', toThemes);
     btnThemes.addEventListener('click', toThemes);
