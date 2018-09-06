@@ -2,6 +2,7 @@ window.onload = init;
 var instructions, body, unloaded_candles, loaded_candles, loading_screen, themes, menu;
 var btnInstructions, instructions_section, toMenu, puntuacion, btnPuntuacion, btnInicio, btnThemes;
 var btnCatrinas, catrinas_screen, game_screen, themeToCatrina, btnPlay, gameToMenu, credits, btnCredits;
+var btnInfoCatrinas,btnInfoTemas;
 var inputs;
 var sc1, sc2, sc3, sc4;
 var isDone = false;
@@ -30,7 +31,8 @@ function init() {
     }
 
     inputs=document.getElementsByTagName('input');
-
+    btnInfoCatrinas=document.getElementById("btnCatrinas");
+    btnInfoTemas=document.getElementById("btnTemas");
     instructions_section.addEventListener('click', showText);
     loading_screen = document.getElementById('loading');
     themes = document.getElementById('themes');
@@ -52,6 +54,8 @@ function init() {
     btnInicio.addEventListener('click', changeScreen);
     btnThemes.addEventListener('click', changeScreen);
     btnCredits.addEventListener('click', changeScreen);
+    btnInfoCatrinas.addEventListener('click', changeScreen);
+    btnInfoTemas.addEventListener('click', changeScreen);
     loaded_candles.addEventListener('animationend', principalMenu);
     menu.addEventListener('animationend', dissapear);
     instructions_section.addEventListener('animationend', dissapear);
@@ -181,6 +185,7 @@ function changeScreen(){
         game_screen.classList.add('animationIn');
         lblCategoria.innerHTML="Tema seleccionado: "+chosenCategory;
     }
+    
 
 }
 
