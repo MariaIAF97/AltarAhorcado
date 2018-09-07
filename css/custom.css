@@ -670,5 +670,9 @@ img.left-candle{
     margin-top: 52%;
     margin-left: 73%;
     position: fixed;
+    font-family: 'Gobold Regular';
+    color: white;
+    font-size: 6vw;
+
 }
 
