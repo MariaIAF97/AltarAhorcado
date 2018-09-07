@@ -2,9 +2,10 @@ window.onload = init;
 var instructions, body, unloaded_candles, loaded_candles, loading_screen, themes, menu;
 var btnInstructions, instructions_section, toMenu, puntuacion, btnPuntuacion, btnInicio, btnThemes;
 var btnCatrinas, catrinas_screen, game_screen, themeToCatrina, btnPlay, gameToMenu, credits, btnCredits;
-var infoCatrinas,infoTemas;
+var infoCatrinas,infoTemas, btnAux;
 var btnGanaste,btnPerdiste,btnPuntos;
 var inputs;
+var buttons;
 var sc1, sc2, sc3, sc4;
 var isDone = false;
 var visible = false;
@@ -20,12 +21,13 @@ function init() {
     //         choseTopic(e);
     //     });
     // }
-
+    buttons= document.getElementsByClassName('letra');
     lblCategoria=document.getElementById("temaSeleccionado");
     instructions = document.getElementById("instructions-text");
     btnInstructions = document.getElementById("btnInstrucciones");
     instructions_section = document.getElementById("instructions");
     toMenu = document.getElementsByClassName("btnToMenu");
+    btnAux=document.getElementById("btnMenu");
 
     for (var i = 0; i < toMenu.length; i++) {
         toMenu[i].addEventListener('click', backToMenu);
@@ -55,6 +57,7 @@ function init() {
     btnPuntuacion.addEventListener('click', changeScreen);
     btnInicio.addEventListener('click', changeScreen);
     btnThemes.addEventListener('click', changeScreen);
+    btnAux.addEventListener('click', backToMenu);
     btnCredits.addEventListener('click', changeScreen);
     btnCatrinas.addEventListener('click', changeScreen);
     loaded_candles.addEventListener('animationend', principalMenu);
