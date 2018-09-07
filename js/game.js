@@ -264,7 +264,8 @@ function compruebaFin() {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
-    puntosFinales = oculta.length * 3456;
+    puntosFinales = oculta.length * 5;
+    document.getElementById("puntos").innerHTML = puntosFinales + "\nPuntos";
     var puntajeMayor = localStorage.getItem('puntajeMayor') != null ? localStorage.getItem('puntajeMayor') : 0;
     var puntajeMedio1 = localStorage.getItem('puntajeMedio1') != null ? localStorage.getItem('puntajeMedio1') : 0;
     var puntajeMedio2 = localStorage.getItem('puntajeMedio2') != null ? localStorage.getItem('puntajeMedio2') : 0;
