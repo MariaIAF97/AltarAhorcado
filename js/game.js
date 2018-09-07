@@ -255,7 +255,11 @@ function choseCatrina(e) {
 
 function compruebaFin() {
   if (oculta.length == palabra.length) {
-    console.log("Ganó");
+    //console.log("Ganó");
+    document.getElementById("ganaste").style.visibility = "visible";
+    document.getElementById("puntos").style.visibility = "visible";
+    document.getElementById("temaSeleccionado").style.visibility = "hidden";
+
     //document.getElementById("msg-final").innerHTML = "GANASTE";
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
@@ -280,7 +284,10 @@ function compruebaFin() {
     }
 
   } else if (cont == 0) {
-    console.log("Perdió");
+    //console.log("Perdió");
+    document.getElementById("perdiste").style.visibility = "visible";
+    document.getElementById("temaSeleccionado").style.visibility = "hidden";
+
     //document.getElementById("msg-final").innerHTML = "PERDISTE";
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;

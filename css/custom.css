@@ -660,3 +660,15 @@ img.left-candle{
    margin-top:145% ;
 }
 
+/* Ganaste o perdiste */
+.btnwinOrLose{
+    margin-top: 52%;
+    margin-left: 31%;
+    position: fixed;
+}
+#puntos{
+    margin-top: 52%;
+    margin-left: 73%;
+    position: fixed;
+}
+

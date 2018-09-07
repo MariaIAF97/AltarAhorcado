@@ -2,7 +2,8 @@ window.onload = init;
 var instructions, body, unloaded_candles, loaded_candles, loading_screen, themes, menu;
 var btnInstructions, instructions_section, toMenu, puntuacion, btnPuntuacion, btnInicio, btnThemes;
 var btnCatrinas, catrinas_screen, game_screen, themeToCatrina, btnPlay, gameToMenu, credits, btnCredits;
-var btnInfoCatrinas,btnInfoTemas;
+//var infoCatrinas,infoTemas;
+var btnGanaste,btnPerdiste,btnPuntos;
 var inputs;
 var sc1, sc2, sc3, sc4;
 var isDone = false;
@@ -29,10 +30,9 @@ function init() {
     for (var i = 0; i < toMenu.length; i++) {
         toMenu[i].addEventListener('click', backToMenu);
     }
-
+    // infoCatrinas=document.getElementById("infoCatrinas");
+    // infoTemas=document.getElementById("infoTemas");
     inputs=document.getElementsByTagName('input');
-    btnInfoCatrinas=document.getElementById("btnCatrinas");
-    btnInfoTemas=document.getElementById("btnTemas");
     instructions_section.addEventListener('click', showText);
     loading_screen = document.getElementById('loading');
     themes = document.getElementById('themes');
@@ -49,6 +49,8 @@ function init() {
     menu = document.getElementById('principal');
     unloaded_candles = document.getElementById("unloaded");
     loaded_candles = document.getElementById("loaded");
+    btnInfoCatrinas=document.getElementById("btnCatrinas");
+    btnInfoTemas=document.getElementById("btnTemas");
     btnInstructions.addEventListener('click', changeScreen);
     btnPuntuacion.addEventListener('click', changeScreen);
     btnInicio.addEventListener('click', changeScreen);
@@ -62,6 +64,8 @@ function init() {
     game_screen.addEventListener('animationend', dissapear);
     themes.addEventListener('animationend', dissapear);
     credits.addEventListener('animationend', dissapear);
+    // infoCatrinas.addEventListener('animationend', dissapear);
+    // infoTemas.addEventListener('animationend', dissapear);
     catrinas_screen.addEventListener('animationend', dissapear);
     puntuacion.addEventListener('animationend', dissapear);
     loading_screen.addEventListener('animationend', loadingScreentoInitScreen);
@@ -84,6 +88,11 @@ function init() {
     sc2=document.getElementById('score2');
     sc3=document.getElementById('score3');
     sc4=document.getElementById('score4');
+
+    //Ganaste o perdiste
+    document.getElementById("ganaste").style.visibility="hidden";
+    document.getElementById("perdiste").style.visibility="hidden";
+    document.getElementById("puntos").style.visibility="hidden";
 
 }
 
@@ -183,10 +192,21 @@ function changeScreen(){
         catrinas_screen.classList.add('animationOut');
         game_screen.style.display = "block";
         game_screen.classList.add('animationIn');
-        lblCategoria.innerHTML="Tema seleccionado: "+chosenCategory;
+        document.getElementById("temaSeleccionado").innerHTML="Tema seleccionado: "+chosenCategory;
     }
     
-
+    // if(this.classList.contains('toInfoCatrinas')){
+    //     menu.classList.remove('animationIn');
+    //     menu.classList.add('animationOut');
+    //     infoCatrinas.style.display = "block";
+    //     infoCatrinas.classList.add('animationIn');
+    // }
+    // if(this.classList.contains('toInfoThemes')){
+    //     menu.classList.remove('animationIn');
+    //     menu.classList.add('animationOut');
+    //     infoTemas.style.display = "block";
+    //     infoTemas .classList.add('animationIn');
+    // }
 }
 
 function backToMenu(event) {
