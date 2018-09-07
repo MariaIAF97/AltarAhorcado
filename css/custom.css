@@ -323,6 +323,36 @@ img.left-candle{
     animation-fill-mode: forwards;
 }
 
+#infoCatrinas{
+    display: none;
+}
+#infoCatrinas.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#infoCatrinas.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#infoTemas{
+    display: none;
+}
+#infoTemas.animationIn{
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#infoTemas.animationOut{
+    animation-name: fadeOutIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
 #credits{
     display: none;
 }
