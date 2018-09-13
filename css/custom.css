@@ -438,18 +438,18 @@ img.left-candle{
 }
 #animal{
     position: fixed;
-    margin-top: 35.3%;
+    margin-top: 35.5%;
     left: 25%; 
     
 }
 #color{
     position: fixed;
-    margin-top: 69%;
+    margin-top: 68.5%;
     left: 25%;
 }
 #elemento{
     position: fixed;
-    margin-top: 99.3%;
+    margin-top: 99.5%;
     left: 25%;
 }
 
@@ -461,12 +461,12 @@ img.left-candle{
 }
 #cara2{
     position: fixed;
-    margin-top: 67.8%;
+    margin-top: 68%;
     left: 27.3%;
 }
 #cara3{
     position: fixed;
-    margin-top: 111.9%;
+    margin-top: 112%;
     left: 27.3%;
 }
 /* Juego */
