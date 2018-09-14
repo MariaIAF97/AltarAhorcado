@@ -184,13 +184,13 @@ input:hover{
 
 .candles{
     position: relative;
-    top: 600px;
+    top: -28px;
     opacity: 1;
 }
 
 .loaded-candles{
     position: relative;
-    top: 600px;
+    top: -28px;
     opacity: 0;
 }
 
