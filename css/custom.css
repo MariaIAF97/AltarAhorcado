@@ -7,20 +7,21 @@
     font-family: 'Cocogoose Light';
     src: url('../typ/tipografiaTextoCorrido/Cocogoose Pro Light-trial.ttf');
 }
+
 #temaSeleccionado{
     font-family: 'Gobold Regular';
     position: fixed;
-    margin-top: 50%;
-    margin-left: 28%;
+    margin-top: 102%;
+    margin-left: 34%;
     text-align: center;
     color:white;
     font-size: 4vw;
 }
 
 p{ 
-    font-size: 2.6vw;
+    font-size: 2.4vw;
     opacity: 0;
-    margin-top: 8%;
+    margin-top: 17%;
     margin-left: 66%;
     font-family: 'Cocogoose Light';
     color:white;
@@ -377,7 +378,7 @@ img.left-candle{
 
 #creditsToMenu{
     float: right;
-    margin-right: 4%;
+    margin-right: 6%;
 }
 
 /* Juego */
@@ -388,12 +389,12 @@ img.left-candle{
 }
 #btnPausa{
     position: fixed;
-    bottom:4% ;
+    bottom:3% ;
     left: 82%;
 }
 #btnMenu{
     position: fixed;
-    bottom:4% ;
+    bottom:3% ;
     left: 70%;
 }
 .keyboard{
@@ -438,35 +439,35 @@ img.left-candle{
 }
 #animal{
     position: fixed;
-    margin-top: 35.5%;
+    margin-top: 33.3%;
     left: 25%; 
     
 }
 #color{
     position: fixed;
-    margin-top: 68.5%;
+    margin-top: 66.5%;
     left: 25%;
 }
 #elemento{
     position: fixed;
-    margin-top: 99.5%;
+    margin-top: 97.3%;
     left: 25%;
 }
 
 #cara1{
     position: fixed;
-    margin-top: 24%;
+    margin-top: 21%;
     left: 27.3%; 
     
 }
 #cara2{
     position: fixed;
-    margin-top: 68%;
+    margin-top: 66%;
     left: 27.3%;
 }
 #cara3{
     position: fixed;
-    margin-top: 112%;
+    margin-top: 110%;
     left: 27.3%;
 }
 /* Juego */
@@ -477,37 +478,37 @@ img.left-candle{
 }
 .catrinaHead{
     width: 8%;
-    bottom: 51%;
+    bottom: 57%;
     left: 51%;
 }
 #fail6{
     width: 5%;
-    bottom: 48%;
+    bottom: 54%;
     left: 54%;
 }
 #fail5{
-    bottom: 48%;
-    left: 45%;
+    bottom: 54%;
+    left: 38%;
 }
 #fail4{
-    bottom: 45.5%;
+    bottom: 49%;
     left: 58%;
 }
 #fail3{
-    bottom: 46.5%;
+    bottom: 52%;
     left: 52%;
 }
 #fail2{
-    bottom: 42%;
+    bottom: 46%;
     left: 45%;
 }
 #fail1{
-    bottom: 42%;
+    bottom: 44%;
     left: 56%;
 }
 /* Catrina */
 /*Armado de palabra*/
-.keyboard.primera{
+.keyboard.primeraL8{
     left: 17%;
     top:13.7%;
     display: none;
@@ -518,152 +519,174 @@ img.left-candle{
     animation-duration: 0.7s;
     animation-fill-mode: forwards;
 }
-
+.keyboard.primeraL8{
+    left: 11%;
+    top:15%;
+    display: none;
+}
 .keyboard.segundaL8{
-    left: 23%;
-    top:21.5%;
+    left: 18%;
+    top:21%;
     display: none;
 }
 
 .keyboard.terceraL8{
-    left: 34%;
+    left: 32%;
     display: none;
-    top:13.7%;
+    top:15%;
 }
 
 .keyboard.cuartaL8{
-    left: 43%;
-    top:21.5%;
+    left: 42%;
+    top:21%;
     display: none;
 }
 .keyboard.quintaL8{
-    left: 53%;
-    top:13.7%;
+    left: 52%;
+    top:15%;
     display: none;
 }
 
 .keyboard.sextaL8{
-    left: 63%;
-    top:21.5%;
+    left: 62%;
+    top:21%;
     display: none;
 }
 
 .keyboard.septimaL8{
-    left: 74%;
-    top:13.7%;
+    left: 72%;
+    top:15%;
     display: none;
 }
 
 .keyboard.octavaL8{
-    left: 81%;
-    top:21.5%;
+    left: 82%;
+    top:21%;
     display: none;
 }
 
+.keyboard.primeraL7{
+    left: 18%;
+    top:21%;
+    display: none;
+}
 .keyboard.segundaL7{
-    left: 23%;
-    top:21.5%;
+    left: 31%;
+    top:14.5%;
     display: none;
 }
 
 .keyboard.terceraL7{
-    left: 34%;
+    left: 41%;
     display: none;
-    top:13.7%;
+    top:21%;
 }
 
 .keyboard.cuartaL7{
-    left: 43%;
-    top:21.5%;
+    left: 51%;
+    top:14.5%;
     display: none;
 }
 .keyboard.quintaL7{
-    left: 53%;
-    top:13.7%;
+    left: 63%;
+    top:21%;
     display: none;
 }
 
 .keyboard.sextaL7{
-    left: 63%;
-    top:21.5%;
+    left: 72%;
+    top:14.5%;
     display: none;
 }
 
 .keyboard.septimaL7{
-    left: 74%;
-    top:13.7%;
+    left: 83%;
+    top:21%;
     display: none;
 }
 
-
+.keyboard.primeraL6{
+    left: 18%;
+    top:21%;
+    display: none;
+}
 .keyboard.segundaL6{
-    left: 34%;
-    top:13.7%;
+    left: 32%;
+    top:14.5%;
     display: none;
 }
 
 .keyboard.terceraL6{
-    left: 43%;
+    left: 41%;
     display: none;
-    top:21.5%;
+    top:21%;
 }
 
 .keyboard.cuartaL6{
-    left: 53%;
-    top:13.7%;
+    left: 52%;
+    top:14.5%;
     display: none;
 }
 .keyboard.quintaL6{
-    left: 63%;
-    top:21.5%;
+    left: 62%;
+    top:21%;
     display: none;
 }
 
 .keyboard.sextaL6{
-    left: 74%;
-    top:13.7%;
+    left: 72%;
+    top:14.5%;
     display: none;
 }
 
-
+.keyboard.primeraL5{
+    left: 31%;
+    top:15%;
+    display: none;
+}
 .keyboard.segundaL5{
-    left: 34%;
-    top:13.7%;
+    left: 41%;
+    top:21%;
     display: none;
 }
 
 .keyboard.terceraL5{
-    left: 43%;
+    left: 51%;
     display: none;
-    top:21.5%;
+    top:15%;
 }
 
 .keyboard.cuartaL5{
-    left: 53%;
-    top:13.7%;
+    left: 63%;
+    top:21%;
     display: none;
 }
 .keyboard.quintaL5{
-    left: 74%;
-    top:13.7%;
+    left: 72%;
+    top:15%;
     display: none;
 }
 
-.keyboard.segundaL4{
-    left: 34%;
+.keyboard.primeraL4{
+    left: 31%;
     top:13.7%;
+    display: none;
+}
+.keyboard.segundaL4{
+    left: 41%;
+    top:19.5%;
     display: none;
 }
 
 .keyboard.terceraL4{
-    left: 53%;
+    left: 52%;
     display: none;
     top:13.7%;
 }
 
 .keyboard.cuartaL4{
-    left: 74%;
-    top:13.7%;
+    left: 62.8%;
+    top:19.5%;
     display: none;
 }
 /*Armado de palabra*/
@@ -678,31 +701,32 @@ img.left-candle{
 }
 #score1{
    
-    margin-top:105% ;
+    margin-top:86% ;
 }
 #score2{
-   margin-top: 117%;
+   margin-top: 100%;
 }
 #score3{
-   margin-top:130% ;
+   margin-top:114% ;
 }
 #score4{
-   margin-top:145% ;
+   margin-top:133% ;
 }
 
 /* Ganaste o perdiste */
 .btnwinOrLose{
-    margin-top: 52%;
-    margin-left: 31%;
+    margin-top: 90%;
+    margin-left: 40%;
     position: fixed;
+    width:20%;
+    height: 8%;
 }
 #puntos{
-    margin-top: 52%;
-    margin-left: 73%;
+    margin-top: 105%;
+    margin-left: 38%;
     position: fixed;
     font-family: 'Gobold Regular';
     color: white;
     font-size: 6vw;
 
 }
-
